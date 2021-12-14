@@ -1,0 +1,4771 @@
+{
+    "metadata": {
+        "title": "Myanmar Power Network Model 30 buses",
+        "description": "Energy model for integrated water-energy simulation in Myanmar",
+        "minimum_version": "v1.0"
+    },
+    "timestepper": {
+        "start": "1972-01-01",
+        "end": "1972-12-30",
+        "timestep": "h"
+    },
+    "scenarios": [
+        {
+            "name": "scn",
+            "size": 33,
+            "slice": [
+                0,
+                1
+            ],
+            "comment": "scenario_combinations: [0] or slice: [0,1]"
+        },
+        {
+            "name": "water_scenarios",
+            "size": 1,
+            "ensemble_names": [
+                "scn1"
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "GEN_PHYU",
+            "type": "generator",
+            "max_flow": "GEN_PHYU:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: E"
+        },
+        {
+            "name": "GEN_BALUCHAUNG (1)",
+            "type": "generator",
+            "max_flow": "GEN_BALUCHAUNG (1):max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: E"
+        },
+        {
+            "name": "GEN_BALUCHAUNG (2)",
+            "type": "generator",
+            "max_flow": "GEN_BALUCHAUNG (2):max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: E"
+        },
+        {
+            "name": "GEN_BALUCHAUNG (3)",
+            "type": "generator",
+            "max_flow": "GEN_BALUCHAUNG (3):max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: E"
+        },
+        {
+            "name": "GEN_YEYWA (LOWER)-1",
+            "type": "generator",
+            "max_flow": "GEN_YEYWA (LOWER)-1:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: E"
+        },
+        {
+            "name": "GEN_YEYWA (LOWER)-2",
+            "type": "generator",
+            "max_flow": "GEN_YEYWA (LOWER)-2:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: E"
+        },
+        {
+            "name": "GEN_SHWELI (1)",
+            "type": "generator",
+            "max_flow": "GEN_SHWELI (1):max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: E"
+        },
+        {
+            "name": "GEN_MONE",
+            "type": "generator",
+            "max_flow": "GEN_MONE:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: E"
+        },
+        {
+            "name": "GEN_KINDA",
+            "type": "generator",
+            "max_flow": "GEN_KINDA:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: E"
+        },
+        {
+            "name": "GEN_THAPHANZEIK",
+            "type": "generator",
+            "max_flow": "GEN_THAPHANZEIK:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: E"
+        },
+        {
+            "name": "GEN_KABAUNG",
+            "type": "generator",
+            "max_flow": "GEN_KABAUNG:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: E"
+        },
+        {
+            "name": "GEN_SEDAWGYI",
+            "type": "generator",
+            "max_flow": "GEN_SEDAWGYI:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: E"
+        },
+        {
+            "name": "GEN_YENWE",
+            "type": "generator",
+            "max_flow": "GEN_YENWE:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: E"
+        },
+        {
+            "name": "GEN_ZAUNGTU",
+            "type": "generator",
+            "max_flow": "GEN_ZAUNGTU:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: E"
+        },
+        {
+            "name": "GEN_ZAWGYI (1)",
+            "type": "generator",
+            "max_flow": "GEN_ZAWGYI (1):max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: E"
+        },
+        {
+            "name": "GEN_ZAWGYI (2)",
+            "type": "generator",
+            "max_flow": "GEN_ZAWGYI (2):max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: E"
+        },
+        {
+            "name": "GEN_Kyeng Tawng (KENGTAWNG)",
+            "type": "generator",
+            "max_flow": "GEN_Kyeng Tawng (KENGTAWNG):max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: E"
+        },
+        {
+            "name": "GEN_SHWEKYIN",
+            "type": "generator",
+            "max_flow": "GEN_SHWEKYIN:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: E"
+        },
+        {
+            "name": "GEN_Kun (Kune or Kunchaung)",
+            "type": "generator",
+            "max_flow": "GEN_Kun (Kune or Kunchaung):max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: E"
+        },
+        {
+            "name": "GEN_KYEEON KYEEWA",
+            "type": "generator",
+            "max_flow": "GEN_KYEEON KYEEWA:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: E"
+        },
+        {
+            "name": "GEN_THAUK-YE-KHAT (2)",
+            "type": "generator",
+            "max_flow": "GEN_THAUK-YE-KHAT (2):max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: E"
+        },
+        {
+            "name": "GEN_NANCHO",
+            "type": "generator",
+            "max_flow": "GEN_NANCHO:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: E"
+        },
+        {
+            "name": "GEN_PAUNGLAUNG  ",
+            "type": "generator",
+            "max_flow": "GEN_PAUNGLAUNG  :max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: E"
+        },
+        {
+            "name": "GEN_UPPER PAUNGLAUNG",
+            "type": "generator",
+            "max_flow": "GEN_UPPER PAUNGLAUNG:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: E"
+        },
+        {
+            "name": "GEN_MYOGYI",
+            "type": "generator",
+            "max_flow": "GEN_MYOGYI:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: E"
+        },
+        {
+            "name": "GEN_MYITTHA",
+            "type": "generator",
+            "max_flow": "GEN_MYITTHA:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: E"
+        },
+        {
+            "name": "GEN_Baluchaung (upper)",
+            "type": "generator",
+            "max_flow": "GEN_Baluchaung (upper):max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Bawgata",
+            "type": "generator",
+            "max_flow": "GEN_Bawgata:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Belin",
+            "type": "generator",
+            "max_flow": "GEN_Belin:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Buywa (upper)",
+            "type": "generator",
+            "max_flow": "GEN_Buywa (upper):max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Buywa",
+            "type": "generator",
+            "max_flow": "GEN_Buywa:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Chipwi",
+            "type": "generator",
+            "max_flow": "GEN_Chipwi:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Dapein 2",
+            "type": "generator",
+            "max_flow": "GEN_Dapein 2:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Deedoke",
+            "type": "generator",
+            "max_flow": "GEN_Deedoke:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Dum Ban",
+            "type": "generator",
+            "max_flow": "GEN_Dum Ban:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Gaw Lan",
+            "type": "generator",
+            "max_flow": "GEN_Gaw Lan:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Hawkham (upper) ",
+            "type": "generator",
+            "max_flow": "GEN_Hawkham (upper) :max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_He Kou",
+            "type": "generator",
+            "max_flow": "GEN_He Kou:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Hkankawn",
+            "type": "generator",
+            "max_flow": "GEN_Hkankawn:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Pisa",
+            "type": "generator",
+            "max_flow": "GEN_Pisa:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Tamanthi ",
+            "type": "generator",
+            "max_flow": "GEN_Tamanthi :max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Hutgyi",
+            "type": "generator",
+            "max_flow": "GEN_Hutgyi:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Keng Tawng (upper)",
+            "type": "generator",
+            "max_flow": "GEN_Keng Tawng (upper):max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Keng Tong",
+            "type": "generator",
+            "max_flow": "GEN_Keng Tong:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Keng Yang",
+            "type": "generator",
+            "max_flow": "GEN_Keng Yang:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Khaunglanphu",
+            "type": "generator",
+            "max_flow": "GEN_Khaunglanphu:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_KunLong",
+            "type": "generator",
+            "max_flow": "GEN_KunLong:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Lawngdin",
+            "type": "generator",
+            "max_flow": "GEN_Lawngdin:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Lemro 1",
+            "type": "generator",
+            "max_flow": "GEN_Lemro 1:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Laza",
+            "type": "generator",
+            "max_flow": "GEN_Laza:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Lemro 2",
+            "type": "generator",
+            "max_flow": "GEN_Lemro 2:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Nam Pawn (lower)",
+            "type": "generator",
+            "max_flow": "GEN_Nam Pawn (lower):max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Mong Ton",
+            "type": "generator",
+            "max_flow": "GEN_Mong Ton:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Manipur",
+            "type": "generator",
+            "max_flow": "GEN_Manipur:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Mantong",
+            "type": "generator",
+            "max_flow": "GEN_Mantong:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Myitsone",
+            "type": "generator",
+            "max_flow": "GEN_Myitsone:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Nam Hka",
+            "type": "generator",
+            "max_flow": "GEN_Nam Hka:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Nam Hsim",
+            "type": "generator",
+            "max_flow": "GEN_Nam Hsim:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Nam Lang",
+            "type": "generator",
+            "max_flow": "GEN_Nam Lang:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Nam Li",
+            "type": "generator",
+            "max_flow": "GEN_Nam Li:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Nam Lin",
+            "type": "generator",
+            "max_flow": "GEN_Nam Lin:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Nam Paw",
+            "type": "generator",
+            "max_flow": "GEN_Nam Paw:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Nam Pawn (upper)  ",
+            "type": "generator",
+            "max_flow": "GEN_Nam Pawn (upper)  :max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Nam Tabak I",
+            "type": "generator",
+            "max_flow": "GEN_Nam Tabak I:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Nam Tu",
+            "type": "generator",
+            "max_flow": "GEN_Nam Tu:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Naopha",
+            "type": "generator",
+            "max_flow": "GEN_Naopha:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Paung Laung (middle)",
+            "type": "generator",
+            "max_flow": "GEN_Paung Laung (middle):max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Hpak Nam",
+            "type": "generator",
+            "max_flow": "GEN_Hpak Nam:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Hpi Hseng",
+            "type": "generator",
+            "max_flow": "GEN_Hpi Hseng:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Renan",
+            "type": "generator",
+            "max_flow": "GEN_Renan:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Sedawgyi (upper)",
+            "type": "generator",
+            "max_flow": "GEN_Sedawgyi (upper):max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Shweli 2",
+            "type": "generator",
+            "max_flow": "GEN_Shweli 2:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Shweli 3",
+            "type": "generator",
+            "max_flow": "GEN_Shweli 3:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Suo Lwe",
+            "type": "generator",
+            "max_flow": "GEN_Suo Lwe:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Taninthayi",
+            "type": "generator",
+            "max_flow": "GEN_Taninthayi:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Thahtay",
+            "type": "generator",
+            "max_flow": "GEN_Thahtay:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Tongxinqiao",
+            "type": "generator",
+            "max_flow": "GEN_Tongxinqiao:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Wutsok",
+            "type": "generator",
+            "max_flow": "GEN_Wutsok:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Yeywa (middle)",
+            "type": "generator",
+            "max_flow": "GEN_Yeywa (middle):max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Yeywa (upper)",
+            "type": "generator",
+            "max_flow": "GEN_Yeywa (upper):max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Ywathit",
+            "type": "generator",
+            "max_flow": "GEN_Ywathit:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Nam Tabak II",
+            "type": "generator",
+            "max_flow": "GEN_Nam Tabak II:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Mong Hsat",
+            "type": "generator",
+            "max_flow": "GEN_Mong Hsat:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Tawog Hka",
+            "type": "generator",
+            "max_flow": "GEN_Tawog Hka:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Ta Rung Hka",
+            "type": "generator",
+            "max_flow": "GEN_Ta Rung Hka:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Ta Nai Hka",
+            "type": "generator",
+            "max_flow": "GEN_Ta Nai Hka:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Thauk Ye Khat 1",
+            "type": "generator",
+            "max_flow": "GEN_Thauk Ye Khat 1:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Yunzalin",
+            "type": "generator",
+            "max_flow": "GEN_Yunzalin:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Lam Pha",
+            "type": "generator",
+            "max_flow": "GEN_Lam Pha:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Mi Chaung",
+            "type": "generator",
+            "max_flow": "GEN_Mi Chaung:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_U Yu Chaung",
+            "type": "generator",
+            "max_flow": "GEN_U Yu Chaung:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Thein Kun Chaung",
+            "type": "generator",
+            "max_flow": "GEN_Thein Kun Chaung:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Tha Gyet Chaung",
+            "type": "generator",
+            "max_flow": "GEN_Tha Gyet Chaung:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Glohong Kra",
+            "type": "generator",
+            "max_flow": "GEN_Glohong Kra:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Myet Taw Chaung",
+            "type": "generator",
+            "max_flow": "GEN_Myet Taw Chaung:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Mindon",
+            "type": "generator",
+            "max_flow": "GEN_Mindon:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Than Dwe",
+            "type": "generator",
+            "max_flow": "GEN_Than Dwe:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Kyein Ta Li",
+            "type": "generator",
+            "max_flow": "GEN_Kyein Ta Li:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Nam Hkok",
+            "type": "generator",
+            "max_flow": "GEN_Nam Hkok:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Saing Din",
+            "type": "generator",
+            "max_flow": "GEN_Saing Din:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Sar Ra Wa Chaung",
+            "type": "generator",
+            "max_flow": "GEN_Sar Ra Wa Chaung:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Mongwa",
+            "type": "generator",
+            "max_flow": "GEN_Mongwa:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Chipwi Nge",
+            "type": "generator",
+            "max_flow": "GEN_Chipwi Nge:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Mali",
+            "type": "generator",
+            "max_flow": "GEN_Mali:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Dapein 1",
+            "type": "generator",
+            "max_flow": "GEN_Dapein 1:max_flow",
+            "cost": 0.02,
+            "comment": "HP generator, Status: E"
+        },
+        {
+            "name": "Mansan",
+            "type": "bus",
+            "comment": "Status: E"
+        },
+        {
+            "name": "Shweli",
+            "type": "bus",
+            "comment": "Status: E"
+        },
+        {
+            "name": "Thapyewa",
+            "type": "bus",
+            "comment": "Status: M"
+        },
+        {
+            "name": "Yeywa",
+            "type": "bus",
+            "comment": "Status: M"
+        },
+        {
+            "name": "Naypyitaw",
+            "type": "bus",
+            "comment": "Status: M"
+        },
+        {
+            "name": "Taungdwingyi",
+            "type": "bus",
+            "comment": "Status: E"
+        },
+        {
+            "name": "Shwedaung",
+            "type": "bus",
+            "comment": "Status: E"
+        },
+        {
+            "name": "Oakshitpin",
+            "type": "bus",
+            "comment": "Status: E"
+        },
+        {
+            "name": "Taungup",
+            "type": "bus",
+            "comment": "Status: E"
+        },
+        {
+            "name": "Kyaukphyu",
+            "type": "bus",
+            "comment": "Status: E"
+        },
+        {
+            "name": "Ann",
+            "type": "bus",
+            "comment": "Status: E"
+        },
+        {
+            "name": "Ponnakyun",
+            "type": "bus",
+            "comment": "Status: E"
+        },
+        {
+            "name": "Mann",
+            "type": "bus",
+            "comment": "Status: E"
+        },
+        {
+            "name": "Minhla",
+            "type": "bus",
+            "comment": "Status: M"
+        },
+        {
+            "name": "Athoke",
+            "type": "bus",
+            "comment": "Status: M"
+        },
+        {
+            "name": "Taungoo",
+            "type": "bus",
+            "comment": "Status: M"
+        },
+        {
+            "name": "Lawpita",
+            "type": "bus",
+            "comment": "Status: E"
+        },
+        {
+            "name": "Kun",
+            "type": "bus",
+            "comment": "Status: M"
+        },
+        {
+            "name": "Shwekyin",
+            "type": "bus",
+            "comment": "Status: E"
+        },
+        {
+            "name": "Yangon",
+            "type": "bus",
+            "comment": "Status: M"
+        },
+        {
+            "name": "Kamanat",
+            "type": "bus",
+            "comment": "Status: E"
+        },
+        {
+            "name": "Sittaung",
+            "type": "bus",
+            "comment": "Status: E"
+        },
+        {
+            "name": "Thaton",
+            "type": "bus",
+            "comment": "Status: E"
+        },
+        {
+            "name": "Mawlamyaing",
+            "type": "bus",
+            "comment": "Status: E"
+        },
+        {
+            "name": "Mandalay",
+            "type": "bus",
+            "comment": "Status: M"
+        },
+        {
+            "name": "Hlaingthaya",
+            "type": "bus",
+            "comment": "Status: M"
+        },
+        {
+            "name": "Kyaiklatt",
+            "type": "bus",
+            "comment": "Status: E"
+        },
+        {
+            "name": "Nyaungbingyi",
+            "type": "bus",
+            "comment": "Status: E"
+        },
+        {
+            "name": "Chaunguu",
+            "type": "bus",
+            "comment": "Status: E"
+        },
+        {
+            "name": "132kV-bus",
+            "type": "bus",
+            "comment": "Status: M"
+        },
+        {
+            "name": "Kabauk",
+            "type": "bus",
+            "comment": "Status: P"
+        },
+        {
+            "name": "Tanintharyi",
+            "type": "bus",
+            "comment": "Status: P"
+        },
+        {
+            "name": "Nabar",
+            "type": "bus",
+            "comment": "Status: P"
+        },
+        {
+            "name": "Bhamo",
+            "type": "bus",
+            "comment": "Status: P"
+        },
+        {
+            "name": "Chipwi",
+            "type": "bus",
+            "comment": "Status: P"
+        },
+        {
+            "name": "Pisa",
+            "type": "bus",
+            "comment": "Status: P"
+        },
+        {
+            "name": "Keng Tong",
+            "type": "bus",
+            "comment": "Status: P"
+        },
+        {
+            "name": "Namsang",
+            "type": "bus",
+            "comment": "Status: P"
+        },
+        {
+            "name": "Load_Mansan",
+            "type": "load",
+            "max_flow": "Load_Mansan_max_flow",
+            "cost": -1000,
+            "comment": "Existing power demand node"
+        },
+        {
+            "name": "Load_Thapyewa",
+            "type": "load",
+            "max_flow": "Load_Thapyewa_max_flow",
+            "cost": -1000,
+            "comment": "Existing power demand node"
+        },
+        {
+            "name": "Load_Naypyitaw",
+            "type": "load",
+            "max_flow": "Load_Naypyitaw_max_flow",
+            "cost": -1000,
+            "comment": "Existing power demand node"
+        },
+        {
+            "name": "Load_Shwedaung",
+            "type": "load",
+            "max_flow": "Load_Shwedaung_max_flow",
+            "cost": -1000,
+            "comment": "Existing power demand node"
+        },
+        {
+            "name": "Load_Oakshitpin",
+            "type": "load",
+            "max_flow": "Load_Oakshitpin_max_flow",
+            "cost": -1000,
+            "comment": "Existing power demand node"
+        },
+        {
+            "name": "Load_Taungup",
+            "type": "load",
+            "max_flow": "Load_Taungup_max_flow",
+            "cost": -1000,
+            "comment": "Existing power demand node"
+        },
+        {
+            "name": "Load_Ann",
+            "type": "load",
+            "max_flow": "Load_Ann_max_flow",
+            "cost": -1000,
+            "comment": "Existing power demand node"
+        },
+        {
+            "name": "Load_Ponnakyun",
+            "type": "load",
+            "max_flow": "Load_Ponnakyun_max_flow",
+            "cost": -1000,
+            "comment": "Existing power demand node"
+        },
+        {
+            "name": "Load_Minhla",
+            "type": "load",
+            "max_flow": "Load_Minhla_max_flow",
+            "cost": -1000,
+            "comment": "Existing power demand node"
+        },
+        {
+            "name": "Load_Athoke",
+            "type": "load",
+            "max_flow": "Load_Athoke_max_flow",
+            "cost": -1000,
+            "comment": "Existing power demand node"
+        },
+        {
+            "name": "Load_Kun",
+            "type": "load",
+            "max_flow": "Load_Kun_max_flow",
+            "cost": -1000,
+            "comment": "Existing power demand node"
+        },
+        {
+            "name": "Load_Yangon",
+            "type": "load",
+            "max_flow": "Load_Yangon_max_flow",
+            "cost": -1000,
+            "comment": "Existing power demand node"
+        },
+        {
+            "name": "Load_Kamanat",
+            "type": "load",
+            "max_flow": "Load_Kamanat_max_flow",
+            "cost": -1000,
+            "comment": "Existing power demand node"
+        },
+        {
+            "name": "Load_Sittaung",
+            "type": "load",
+            "max_flow": "Load_Sittaung_max_flow",
+            "cost": -1000,
+            "comment": "Existing power demand node"
+        },
+        {
+            "name": "Load_Mandalay",
+            "type": "load",
+            "max_flow": "Load_Mandalay_max_flow",
+            "cost": -1000,
+            "comment": "Existing power demand node"
+        },
+        {
+            "name": "Load_Hlaingthaya",
+            "type": "load",
+            "max_flow": "Load_Hlaingthaya_max_flow",
+            "cost": -1000,
+            "comment": "Existing power demand node"
+        },
+        {
+            "name": "Load_Kyaiklatt",
+            "type": "load",
+            "max_flow": "Load_Kyaiklatt_max_flow",
+            "cost": -1000,
+            "comment": "Existing power demand node"
+        },
+        {
+            "name": "Load_Nyaungbingyi",
+            "type": "load",
+            "max_flow": "Load_Nyaungbingyi_max_flow",
+            "cost": -1000,
+            "comment": "Existing power demand node"
+        },
+        {
+            "name": "Load_132kV-bus",
+            "type": "load",
+            "max_flow": "Load_132kV-bus_max_flow",
+            "cost": -1000,
+            "comment": "Existing power demand node"
+        },
+        {
+            "name": "GEN_KYUNCHAUNG, GEN_MANN, GEN_Power Gen (Kyaukse) -1, GEN_Power Gen (Kyaukse) -2, GEN_Tigit (TIKYIT)",
+            "comment": "Thermal generation, Status: E, Type: OCGT,Coal",
+            "type": "generator",
+            "cost": 23.166666666666668,
+            "max_flow": 357.0,
+            "min_flow": 106.0
+        },
+        {
+            "name": "GEN_Thaton A, GEN_Thaton B, GEN_Thaton (WB), GEN_Thaton (WB) (STEAM TURBINE)",
+            "comment": "Thermal generation, Status: E, Type: OCGT,CCGT",
+            "type": "generator",
+            "cost": 23.0,
+            "max_flow": 584.0,
+            "min_flow": 2.0
+        },
+        {
+            "name": "GEN_Mawlamying (ML) A, GEN_Mawlamying (ML) B, GEN_Mawlamying (ML) A, GEN_Mawlamying (ML) B",
+            "comment": "Thermal generation, Status: E, Type: OCGT,CCGT",
+            "type": "generator",
+            "cost": 22.0,
+            "max_flow": 1034.0,
+            "min_flow": 82.0
+        },
+        {
+            "name": "GEN_SHEWTAUNG",
+            "comment": "Thermal generation, Status: E, Type: OCGT",
+            "type": "generator",
+            "max_flow": 55.0,
+            "min_flow": 30.0,
+            "cost": 30.0
+        },
+        {
+            "name": "GEN_Myingyan (V Power 1), GEN_Myingyan (V Power 2), GEN_Myingyan (Sembcrop), GEN_Myingyan (Sembcrop)",
+            "comment": "Thermal generation, Status: E, Type: OCGT,CCGT",
+            "type": "generator",
+            "max_flow": 1178.0,
+            "min_flow": 150.0,
+            "cost": 28.333333333333332
+        },
+        {
+            "name": "GEN_Kyauk Phyu (V Power 1), GEN_Kyauk Phyu (V Power 2)",
+            "comment": "Thermal generation, Status: E, Type: OCGT",
+            "type": "generator",
+            "max_flow": 100.0,
+            "min_flow": 20.0,
+            "cost": 30.0
+        },
+        {
+            "name": "GEN_Hlawga, GEN_Hlawga (MCP-1), GEN_Hlawga (MCP-2), GEN_Thaketa, GEN_Thaketa (Max), GEN_Thaketa (U Energy), GEN_Thilawa, GEN_Hlawga (STEAM TURBINE), GEN_Thaketa (STEAM TURBINE), GEN_Thaketa (U Energy)",
+            "comment": "Thermal generation, Status: E, Type: OCGT,CCGT",
+            "type": "generator",
+            "max_flow": 1748.0,
+            "min_flow": 89.0,
+            "cost": 28.5
+        },
+        {
+            "name": "GEN_Ywama A, GEN_Ywama B, GEN_Ywama (EGAT), GEN_Ywama (UPP), GEN_Ahlone, GEN_Ahlone (Toyo Thai), GEN_Ywama, GEN_Ahlone (STEAM TURBINE), GEN_Ahlone (Toyo Thai) (STEAM TURBINE)",
+            "comment": "Thermal generation, Status: E, Type: OCGT,CCGT",
+            "type": "generator",
+            "max_flow": 1578.0,
+            "min_flow": 256.0,
+            "cost": 28.333333333333332
+        },
+        {
+            "name": "Line_Ann_Kyaukphyu",
+            "type": "line",
+            "loss": 0.1578,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.144162
+        },
+        {
+            "name": "Line_Ann_Ponnakyun",
+            "type": "line",
+            "loss": 0.1875,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.066919
+        },
+        {
+            "name": "Line_Mann_Ann",
+            "type": "line",
+            "loss": 0.1503,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.066919
+        },
+        {
+            "name": "Line_Hlaingthaya_Athoke",
+            "type": "line",
+            "loss": 0.1614,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.069314
+        },
+        {
+            "name": "Line_Mandalay_Thapyewa",
+            "type": "line",
+            "loss": 0.1731,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.050155
+        },
+        {
+            "name": "Line_Yeywa_Mandalay",
+            "type": "line",
+            "loss": 0.1583,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.022342
+        },
+        {
+            "name": "Line_Chaunguu_Nyaungbingyi",
+            "type": "line",
+            "loss": 0.166,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.033373
+        },
+        {
+            "name": "Line_Hlaingthaya_Kyaiklatt",
+            "type": "line",
+            "loss": 0.1777,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.033373
+        },
+        {
+            "name": "Line_Minhla_Hlaingthaya",
+            "type": "line",
+            "loss": 0.1682,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.021674
+        },
+        {
+            "name": "Line_Shwedaung_Yangon",
+            "type": "line",
+            "loss": 0.1799,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.018492
+        },
+        {
+            "name": "Line_Kun_Yangon",
+            "type": "line",
+            "loss": 0.1899,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.121126
+        },
+        {
+            "name": "Line_Kamanat_Minhla",
+            "type": "line",
+            "loss": 0.1832,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.038823
+        },
+        {
+            "name": "Line_Kamanat_Yangon",
+            "type": "line",
+            "loss": 0.1996,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.009912
+        },
+        {
+            "name": "Line_Sittaung_Kamanat",
+            "type": "line",
+            "loss": 0.1826,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.035362
+        },
+        {
+            "name": "Line_Kun_Kamanat",
+            "type": "line",
+            "loss": 0.1608,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.053504
+        },
+        {
+            "name": "Line_Kyaukphyu_Taungup",
+            "type": "line",
+            "loss": 0.1589,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.066919
+        },
+        {
+            "name": "Line_Lawpita_Naypyitaw",
+            "type": "line",
+            "loss": 0.1719,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.025726
+        },
+        {
+            "name": "Line_Lawpita_Taungoo",
+            "type": "line",
+            "loss": 0.1803,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.123367
+        },
+        {
+            "name": "Line_Shweli_Mansan",
+            "type": "line",
+            "loss": 0.1586,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.054585
+        },
+        {
+            "name": "Line_Mansan_Mandalay",
+            "type": "line",
+            "loss": 0.1667,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.110479
+        },
+        {
+            "name": "Line_Mawlamyaing_Thaton",
+            "type": "line",
+            "loss": 0.1841,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.04833
+        },
+        {
+            "name": "Line_Shwedaung_Minhla",
+            "type": "line",
+            "loss": 0.1748,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.11891
+        },
+        {
+            "name": "Line_Naypyitaw_Taungdwingyi",
+            "type": "line",
+            "loss": 0.1692,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.044848
+        },
+        {
+            "name": "Line_Mandalay_Nyaungbingyi",
+            "type": "line",
+            "loss": 0.1882,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.050755
+        },
+        {
+            "name": "Line_Oakshitpin_Shwedaung",
+            "type": "line",
+            "loss": 0.1953,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.024876
+        },
+        {
+            "name": "Line_Taungup_Oakshitpin",
+            "type": "line",
+            "loss": 0.1828,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.066919
+        },
+        {
+            "name": "Line_Taungoo_Kun",
+            "type": "line",
+            "loss": 0.1606,
+            "comment": "Status: E",
+            "max_flow": 910.0,
+            "reactance": 0.025981867973545222
+        },
+        {
+            "name": "Line_Taungdwingyi_Shwedaung",
+            "type": "line",
+            "loss": 0.1592,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.086094
+        },
+        {
+            "name": "Line_Shwekyin_Kun",
+            "type": "line",
+            "loss": 0.1638,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.007058
+        },
+        {
+            "name": "Line_Thapyewa_Naypyitaw",
+            "type": "line",
+            "loss": 0.1957,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.083588
+        },
+        {
+            "name": "Line_Thaton_Sittaung",
+            "type": "line",
+            "loss": 0.1926,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.052953
+        },
+        {
+            "name": "Line_Thapyewa_Taungdwingyi",
+            "type": "line",
+            "loss": 0.1708,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.090084
+        },
+        {
+            "name": "Line_Naypyitaw_Taungoo",
+            "type": "line",
+            "loss": 0.1769,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.040558
+        },
+        {
+            "name": "Line_Yeywa_Thapyewa",
+            "type": "line",
+            "loss": 0.1767,
+            "comment": "Status: E",
+            "max_flow": 455.0,
+            "reactance": 0.064005
+        },
+        {
+            "name": "Line_Nyaungbingyi_132kV-bus",
+            "type": "line",
+            "loss": 0.15,
+            "comment": "Status: A",
+            "max_flow": 1000.0,
+            "reactance": 0.053504
+        },
+        {
+            "name": "Line_Mann_132kV-bus",
+            "type": "line",
+            "loss": 0.15,
+            "comment": "Status: A",
+            "max_flow": 1000.0,
+            "reactance": 0.053504
+        },
+        {
+            "name": "Line_Taungdwingyi_132kV-bus",
+            "type": "line",
+            "loss": 0.15,
+            "comment": "Status: A",
+            "max_flow": 1000.0,
+            "reactance": 0.053504
+        },
+        {
+            "name": "Line_Lawpita_132kV-bus",
+            "type": "line",
+            "loss": 0.15,
+            "comment": "Status: A",
+            "max_flow": 1000.0,
+            "reactance": 0.053504
+        },
+        {
+            "name": "Line_Thapyewa_132kV-bus",
+            "type": "line",
+            "loss": 0.15,
+            "comment": "Status: A",
+            "max_flow": 1000.0,
+            "reactance": 0.053504
+        },
+        {
+            "name": "Line_Mandalay_132kV-bus",
+            "type": "line",
+            "loss": 0.15,
+            "comment": "Status: A",
+            "max_flow": 1000.0,
+            "reactance": 0.053504
+        },
+        {
+            "name": "Line_Mawlamyaing_Kabauk",
+            "type": "line",
+            "loss": 0.15,
+            "comment": "Status: P",
+            "max_flow": 1000.0,
+            "reactance": 0.053504
+        },
+        {
+            "name": "Line_Kabauk_Tanintharyi",
+            "type": "line",
+            "loss": 0.15,
+            "comment": "Status: P",
+            "max_flow": 1000.0,
+            "reactance": 0.053504
+        },
+        {
+            "name": "Line_Mandalay_Nabar",
+            "type": "line",
+            "loss": 0.15,
+            "comment": "Status: P",
+            "max_flow": 1000.0,
+            "reactance": 0.053504
+        },
+        {
+            "name": "Line_Nabar_Bhamo",
+            "type": "line",
+            "loss": 0.15,
+            "comment": "Status: P",
+            "max_flow": 1000.0,
+            "reactance": 0.053504
+        },
+        {
+            "name": "Line_Nabar_Chipwi",
+            "type": "line",
+            "loss": 0.15,
+            "comment": "Status: P",
+            "max_flow": 1000.0,
+            "reactance": 0.053504
+        },
+        {
+            "name": "Line_Chipwi_Pisa",
+            "type": "line",
+            "loss": 0.15,
+            "comment": "Status: P",
+            "max_flow": 1000.0,
+            "reactance": 0.053504
+        },
+        {
+            "name": "Line_Thapyewa_Namsang",
+            "type": "line",
+            "loss": 0.15,
+            "comment": "Status: P",
+            "max_flow": 1000.0,
+            "reactance": 0.053504
+        },
+        {
+            "name": "Line_Namsang_Keng Tong",
+            "type": "line",
+            "loss": 0.15,
+            "comment": "Status: P",
+            "max_flow": 1000.0,
+            "reactance": 0.053504
+        },
+        {
+            "name": "GEN_Minbu",
+            "type": "generator",
+            "max_flow": "GEN_Minbu:max_flow",
+            "cost": 0.002,
+            "comment": "PV generator, Status: E"
+        },
+        {
+            "name": "GEN_Chauk",
+            "type": "generator",
+            "max_flow": "GEN_Chauk:max_flow",
+            "cost": 0.002,
+            "comment": "PV generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Taungdwingyi",
+            "type": "generator",
+            "max_flow": "GEN_Taungdwingyi:max_flow",
+            "cost": 0.002,
+            "comment": "PV generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Ta Nyaung",
+            "type": "generator",
+            "max_flow": "GEN_Ta Nyaung:max_flow",
+            "cost": 0.002,
+            "comment": "PV generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Buddhakone",
+            "type": "generator",
+            "max_flow": "GEN_Buddhakone:max_flow",
+            "cost": 0.002,
+            "comment": "PV generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Chaungku",
+            "type": "generator",
+            "max_flow": "GEN_Chaungku:max_flow",
+            "cost": 0.002,
+            "comment": "PV generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Kyungchaung",
+            "type": "generator",
+            "max_flow": "GEN_Kyungchaung:max_flow",
+            "cost": 0.002,
+            "comment": "PV generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Belin",
+            "type": "generator",
+            "max_flow": "GEN_Belin:max_flow",
+            "cost": 0.002,
+            "comment": "PV generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Letpanhla",
+            "type": "generator",
+            "max_flow": "GEN_Letpanhla:max_flow",
+            "cost": 0.002,
+            "comment": "PV generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Myingyan",
+            "type": "generator",
+            "max_flow": "GEN_Myingyan:max_flow",
+            "cost": 0.002,
+            "comment": "PV generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Tharzi",
+            "type": "generator",
+            "max_flow": "GEN_Tharzi:max_flow",
+            "cost": 0.002,
+            "comment": "PV generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Thapyaywa",
+            "type": "generator",
+            "max_flow": "GEN_Thapyaywa:max_flow",
+            "cost": 0.002,
+            "comment": "PV generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Taungoo",
+            "type": "generator",
+            "max_flow": "GEN_Taungoo:max_flow",
+            "cost": 0.002,
+            "comment": "PV generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Tharyargone",
+            "type": "generator",
+            "max_flow": "GEN_Tharyargone:max_flow",
+            "cost": 0.002,
+            "comment": "PV generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Thephyu",
+            "type": "generator",
+            "max_flow": "GEN_Thephyu:max_flow",
+            "cost": 0.002,
+            "comment": "PV generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Kamarnat",
+            "type": "generator",
+            "max_flow": "GEN_Kamarnat:max_flow",
+            "cost": 0.002,
+            "comment": "PV generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Minhla",
+            "type": "generator",
+            "max_flow": "GEN_Minhla:max_flow",
+            "cost": 0.002,
+            "comment": "PV generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Oakshitpin",
+            "type": "generator",
+            "max_flow": "GEN_Oakshitpin:max_flow",
+            "cost": 0.002,
+            "comment": "PV generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Shwedaung",
+            "type": "generator",
+            "max_flow": "GEN_Shwedaung:max_flow",
+            "cost": 0.002,
+            "comment": "PV generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Aungchanthar",
+            "type": "generator",
+            "max_flow": "GEN_Aungchanthar:max_flow",
+            "cost": 0.002,
+            "comment": "PV generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Ngapyawdine",
+            "type": "generator",
+            "max_flow": "GEN_Ngapyawdine:max_flow",
+            "cost": 0.002,
+            "comment": "PV generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Nyaungpingyi",
+            "type": "generator",
+            "max_flow": "GEN_Nyaungpingyi:max_flow",
+            "cost": 0.002,
+            "comment": "PV generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Ohntaw",
+            "type": "generator",
+            "max_flow": "GEN_Ohntaw:max_flow",
+            "cost": 0.002,
+            "comment": "PV generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Wartaya",
+            "type": "generator",
+            "max_flow": "GEN_Wartaya:max_flow",
+            "cost": 0.002,
+            "comment": "PV generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Nay Pyi Taw (1)",
+            "type": "generator",
+            "max_flow": "GEN_Nay Pyi Taw (1):max_flow",
+            "cost": 0.002,
+            "comment": "PV generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Nay Pyi Taw (2)",
+            "type": "generator",
+            "max_flow": "GEN_Nay Pyi Taw (2):max_flow",
+            "cost": 0.002,
+            "comment": "PV generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Shwemyo",
+            "type": "generator",
+            "max_flow": "GEN_Shwemyo:max_flow",
+            "cost": 0.002,
+            "comment": "PV generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Pathein",
+            "type": "generator",
+            "max_flow": "GEN_Pathein:max_flow",
+            "cost": 0.002,
+            "comment": "PV generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Kyaiklat",
+            "type": "generator",
+            "max_flow": "GEN_Kyaiklat:max_flow",
+            "cost": 0.002,
+            "comment": "PV generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Athoke",
+            "type": "generator",
+            "max_flow": "GEN_Athoke:max_flow",
+            "cost": 0.002,
+            "comment": "PV generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Myanaung",
+            "type": "generator",
+            "max_flow": "GEN_Myanaung:max_flow",
+            "cost": 0.002,
+            "comment": "PV generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Wind-1",
+            "type": "generator",
+            "max_flow": "GEN_Wind-1:max_flow",
+            "cost": 0.002,
+            "comment": "Wind generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Wind-2",
+            "type": "generator",
+            "max_flow": "GEN_Wind-2:max_flow",
+            "cost": 0.002,
+            "comment": "Wind generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Wind-3",
+            "type": "generator",
+            "max_flow": "GEN_Wind-3:max_flow",
+            "cost": 0.002,
+            "comment": "Wind generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Wind-4",
+            "type": "generator",
+            "max_flow": "GEN_Wind-4:max_flow",
+            "cost": 0.002,
+            "comment": "Wind generator, Status: P/C"
+        },
+        {
+            "name": "GEN_Wind-5",
+            "type": "generator",
+            "max_flow": "GEN_Wind-5:max_flow",
+            "cost": 0.002,
+            "comment": "Wind generator, Status: P/C"
+        }
+    ],
+    "edges": [
+        [
+            "GEN_PHYU",
+            "Kun"
+        ],
+        [
+            "GEN_BALUCHAUNG (1)",
+            "Lawpita"
+        ],
+        [
+            "GEN_BALUCHAUNG (2)",
+            "Lawpita"
+        ],
+        [
+            "GEN_BALUCHAUNG (3)",
+            "Lawpita"
+        ],
+        [
+            "GEN_YEYWA (LOWER)-1",
+            "Yeywa"
+        ],
+        [
+            "GEN_YEYWA (LOWER)-2",
+            "Yeywa"
+        ],
+        [
+            "GEN_SHWELI (1)",
+            "Shweli"
+        ],
+        [
+            "GEN_MONE",
+            "Mann"
+        ],
+        [
+            "GEN_KINDA",
+            "Yeywa"
+        ],
+        [
+            "GEN_THAPHANZEIK",
+            "132kV-bus"
+        ],
+        [
+            "GEN_KABAUNG",
+            "Taungoo"
+        ],
+        [
+            "GEN_SEDAWGYI",
+            "Mandalay"
+        ],
+        [
+            "GEN_YENWE",
+            "Kun"
+        ],
+        [
+            "GEN_ZAUNGTU",
+            "Kamanat"
+        ],
+        [
+            "GEN_ZAWGYI (1)",
+            "Yeywa"
+        ],
+        [
+            "GEN_ZAWGYI (2)",
+            "Yeywa"
+        ],
+        [
+            "GEN_Kyeng Tawng (KENGTAWNG)",
+            "Namsang"
+        ],
+        [
+            "GEN_SHWEKYIN",
+            "Shwekyin"
+        ],
+        [
+            "GEN_Kun (Kune or Kunchaung)",
+            "Kun"
+        ],
+        [
+            "GEN_KYEEON KYEEWA",
+            "Mann"
+        ],
+        [
+            "GEN_THAUK-YE-KHAT (2)",
+            "Taungoo"
+        ],
+        [
+            "GEN_NANCHO",
+            "Naypyitaw"
+        ],
+        [
+            "GEN_PAUNGLAUNG  ",
+            "Naypyitaw"
+        ],
+        [
+            "GEN_UPPER PAUNGLAUNG",
+            "Naypyitaw"
+        ],
+        [
+            "GEN_MYOGYI",
+            "Yeywa"
+        ],
+        [
+            "GEN_MYITTHA",
+            "Chaunguu"
+        ],
+        [
+            "GEN_Baluchaung (upper)",
+            "Thapyewa"
+        ],
+        [
+            "GEN_Bawgata",
+            "Kun"
+        ],
+        [
+            "GEN_Belin",
+            "Thaton"
+        ],
+        [
+            "GEN_Buywa (upper)",
+            "Mann"
+        ],
+        [
+            "GEN_Buywa",
+            "Mann"
+        ],
+        [
+            "GEN_Chipwi",
+            "Chipwi"
+        ],
+        [
+            "GEN_Dapein 2",
+            "Bhamo"
+        ],
+        [
+            "GEN_Deedoke",
+            "Yeywa"
+        ],
+        [
+            "GEN_Dum Ban",
+            "Chipwi"
+        ],
+        [
+            "GEN_Gaw Lan",
+            "Chipwi"
+        ],
+        [
+            "GEN_Hawkham (upper) ",
+            "Lawpita"
+        ],
+        [
+            "GEN_He Kou",
+            "Keng Tong"
+        ],
+        [
+            "GEN_Hkankawn",
+            "Chipwi"
+        ],
+        [
+            "GEN_Pisa",
+            "Pisa"
+        ],
+        [
+            "GEN_Tamanthi ",
+            "Nabar"
+        ],
+        [
+            "GEN_Hutgyi",
+            "Thaton"
+        ],
+        [
+            "GEN_Keng Tawng (upper)",
+            "Namsang"
+        ],
+        [
+            "GEN_Keng Tong",
+            "Keng Tong"
+        ],
+        [
+            "GEN_Keng Yang",
+            "Keng Tong"
+        ],
+        [
+            "GEN_Khaunglanphu",
+            "Pisa"
+        ],
+        [
+            "GEN_KunLong",
+            "Mansan"
+        ],
+        [
+            "GEN_Lawngdin",
+            "Chipwi"
+        ],
+        [
+            "GEN_Lemro 1",
+            "Ponnakyun"
+        ],
+        [
+            "GEN_Laza",
+            "Chipwi"
+        ],
+        [
+            "GEN_Lemro 2",
+            "Ponnakyun"
+        ],
+        [
+            "GEN_Nam Pawn (lower)",
+            "Lawpita"
+        ],
+        [
+            "GEN_Mong Ton",
+            "Namsang"
+        ],
+        [
+            "GEN_Manipur",
+            "Chaunguu"
+        ],
+        [
+            "GEN_Mantong",
+            "Mansan"
+        ],
+        [
+            "GEN_Myitsone",
+            "Chipwi"
+        ],
+        [
+            "GEN_Nam Hka",
+            "Keng Tong"
+        ],
+        [
+            "GEN_Nam Hsim",
+            "Mansan"
+        ],
+        [
+            "GEN_Nam Lang",
+            "Mandalay"
+        ],
+        [
+            "GEN_Nam Li",
+            "Chipwi"
+        ],
+        [
+            "GEN_Nam Lin",
+            "Keng Tong"
+        ],
+        [
+            "GEN_Nam Paw",
+            "Shweli"
+        ],
+        [
+            "GEN_Nam Pawn (upper)  ",
+            "Lawpita"
+        ],
+        [
+            "GEN_Nam Tabak I",
+            "Bhamo"
+        ],
+        [
+            "GEN_Nam Tu",
+            "Mansan"
+        ],
+        [
+            "GEN_Naopha",
+            "Mansan"
+        ],
+        [
+            "GEN_Paung Laung (middle)",
+            "Naypyitaw"
+        ],
+        [
+            "GEN_Hpak Nam",
+            "Lawpita"
+        ],
+        [
+            "GEN_Hpi Hseng",
+            "Lawpita"
+        ],
+        [
+            "GEN_Renan",
+            "Pisa"
+        ],
+        [
+            "GEN_Sedawgyi (upper)",
+            "Mandalay"
+        ],
+        [
+            "GEN_Shweli 2",
+            "Shweli"
+        ],
+        [
+            "GEN_Shweli 3",
+            "Shweli"
+        ],
+        [
+            "GEN_Suo Lwe",
+            "Keng Tong"
+        ],
+        [
+            "GEN_Taninthayi",
+            "Tanintharyi"
+        ],
+        [
+            "GEN_Thahtay",
+            "Taungup"
+        ],
+        [
+            "GEN_Tongxinqiao",
+            "Chipwi"
+        ],
+        [
+            "GEN_Wutsok",
+            "Pisa"
+        ],
+        [
+            "GEN_Yeywa (middle)",
+            "Yeywa"
+        ],
+        [
+            "GEN_Yeywa (upper)",
+            "Mandalay"
+        ],
+        [
+            "GEN_Ywathit",
+            "Lawpita"
+        ],
+        [
+            "GEN_Nam Tabak II",
+            "Bhamo"
+        ],
+        [
+            "GEN_Mong Hsat",
+            "Keng Tong"
+        ],
+        [
+            "GEN_Tawog Hka",
+            "Nabar"
+        ],
+        [
+            "GEN_Ta Rung Hka",
+            "Nabar"
+        ],
+        [
+            "GEN_Ta Nai Hka",
+            "Nabar"
+        ],
+        [
+            "GEN_Thauk Ye Khat 1",
+            "Taungoo"
+        ],
+        [
+            "GEN_Yunzalin",
+            "Kun"
+        ],
+        [
+            "GEN_Lam Pha",
+            "Mawlamyaing"
+        ],
+        [
+            "GEN_Mi Chaung",
+            "Ponnakyun"
+        ],
+        [
+            "GEN_U Yu Chaung",
+            "Nabar"
+        ],
+        [
+            "GEN_Thein Kun Chaung",
+            "Tanintharyi"
+        ],
+        [
+            "GEN_Tha Gyet Chaung",
+            "Tanintharyi"
+        ],
+        [
+            "GEN_Glohong Kra",
+            "Tanintharyi"
+        ],
+        [
+            "GEN_Myet Taw Chaung",
+            "Mawlamyaing"
+        ],
+        [
+            "GEN_Mindon",
+            "Oakshitpin"
+        ],
+        [
+            "GEN_Than Dwe",
+            "Taungup"
+        ],
+        [
+            "GEN_Kyein Ta Li",
+            "Taungup"
+        ],
+        [
+            "GEN_Nam Hkok",
+            "Namsang"
+        ],
+        [
+            "GEN_Saing Din",
+            "Ponnakyun"
+        ],
+        [
+            "GEN_Sar Ra Wa Chaung",
+            "Tanintharyi"
+        ],
+        [
+            "GEN_Mongwa",
+            "Keng Tong"
+        ],
+        [
+            "GEN_Chipwi Nge",
+            "Chipwi"
+        ],
+        [
+            "GEN_Mali",
+            "Bhamo"
+        ],
+        [
+            "GEN_Dapein 1",
+            "Bhamo"
+        ],
+        [
+            "GEN_Minbu",
+            "Mann"
+        ],
+        [
+            "GEN_Chauk",
+            "Mann"
+        ],
+        [
+            "GEN_Taungdwingyi",
+            "Taungdwingyi"
+        ],
+        [
+            "GEN_Ta Nyaung",
+            "Mann"
+        ],
+        [
+            "GEN_Buddhakone",
+            "132kV-bus"
+        ],
+        [
+            "GEN_Chaungku",
+            "Chaunguu"
+        ],
+        [
+            "GEN_Kyungchaung",
+            "Mann"
+        ],
+        [
+            "GEN_Belin",
+            "Mandalay"
+        ],
+        [
+            "GEN_Letpanhla",
+            "Mandalay"
+        ],
+        [
+            "GEN_Myingyan",
+            "Thapyewa"
+        ],
+        [
+            "GEN_Tharzi",
+            "Thapyewa"
+        ],
+        [
+            "GEN_Thapyaywa",
+            "Thapyewa"
+        ],
+        [
+            "GEN_Taungoo",
+            "Taungoo"
+        ],
+        [
+            "GEN_Tharyargone",
+            "Kun"
+        ],
+        [
+            "GEN_Thephyu",
+            "Naypyitaw"
+        ],
+        [
+            "GEN_Kamarnat",
+            "Kamanat"
+        ],
+        [
+            "GEN_Minhla",
+            "Minhla"
+        ],
+        [
+            "GEN_Oakshitpin",
+            "Oakshitpin"
+        ],
+        [
+            "GEN_Shwedaung",
+            "Shwedaung"
+        ],
+        [
+            "GEN_Aungchanthar",
+            "132kV-bus"
+        ],
+        [
+            "GEN_Ngapyawdine",
+            "Mandalay"
+        ],
+        [
+            "GEN_Nyaungpingyi",
+            "132kV-bus"
+        ],
+        [
+            "GEN_Ohntaw",
+            "Mandalay"
+        ],
+        [
+            "GEN_Wartaya",
+            "Hlaingthaya"
+        ],
+        [
+            "GEN_Nay Pyi Taw (1)",
+            "Naypyitaw"
+        ],
+        [
+            "GEN_Nay Pyi Taw (2)",
+            "Naypyitaw"
+        ],
+        [
+            "GEN_Shwemyo",
+            "Naypyitaw"
+        ],
+        [
+            "GEN_Pathein",
+            "Athoke"
+        ],
+        [
+            "GEN_Kyaiklat",
+            "Kyaiklatt"
+        ],
+        [
+            "GEN_Athoke",
+            "Athoke"
+        ],
+        [
+            "GEN_Myanaung",
+            "Oakshitpin"
+        ],
+        [
+            "GEN_Wind-1",
+            "Mandalay"
+        ],
+        [
+            "GEN_Wind-2",
+            "Thapyewa"
+        ],
+        [
+            "GEN_Wind-3",
+            "Mann"
+        ],
+        [
+            "GEN_Wind-4",
+            "Athoke"
+        ],
+        [
+            "GEN_Wind-5",
+            "Yangon"
+        ],
+        [
+            "GEN_Kyauk Phyu (V Power 1), GEN_Kyauk Phyu (V Power 2)",
+            "Kyaukphyu"
+        ],
+        [
+            "GEN_KYUNCHAUNG, GEN_MANN, GEN_Power Gen (Kyaukse) -1, GEN_Power Gen (Kyaukse) -2, GEN_Tigit (TIKYIT)",
+            "132kV-bus"
+        ],
+        [
+            "GEN_Myingyan (V Power 1), GEN_Myingyan (V Power 2), GEN_Myingyan (Sembcrop), GEN_Myingyan (Sembcrop)",
+            "Thapyewa"
+        ],
+        [
+            "GEN_Thaton A, GEN_Thaton B, GEN_Thaton (WB), GEN_Thaton (WB) (STEAM TURBINE)",
+            "Thaton"
+        ],
+        [
+            "GEN_Mawlamying (ML) A, GEN_Mawlamying (ML) B, GEN_Mawlamying (ML) A, GEN_Mawlamying (ML) B",
+            "Mawlamyaing"
+        ],
+        [
+            "GEN_SHEWTAUNG",
+            "Shwedaung"
+        ],
+        [
+            "GEN_Hlawga, GEN_Hlawga (MCP-1), GEN_Hlawga (MCP-2), GEN_Thaketa, GEN_Thaketa (Max), GEN_Thaketa (U Energy), GEN_Thilawa, GEN_Hlawga (STEAM TURBINE), GEN_Thaketa (STEAM TURBINE), GEN_Thaketa (U Energy)",
+            "Yangon"
+        ],
+        [
+            "GEN_Ywama A, GEN_Ywama B, GEN_Ywama (EGAT), GEN_Ywama (UPP), GEN_Ahlone, GEN_Ahlone (Toyo Thai), GEN_Ywama, GEN_Ahlone (STEAM TURBINE), GEN_Ahlone (Toyo Thai) (STEAM TURBINE)",
+            "Hlaingthaya"
+        ],
+        [
+            "Ann",
+            "Line_Ann_Kyaukphyu"
+        ],
+        [
+            "Line_Ann_Kyaukphyu",
+            "Kyaukphyu"
+        ],
+        [
+            "Ann",
+            "Line_Ann_Ponnakyun"
+        ],
+        [
+            "Line_Ann_Ponnakyun",
+            "Ponnakyun"
+        ],
+        [
+            "Mann",
+            "Line_Mann_Ann"
+        ],
+        [
+            "Line_Mann_Ann",
+            "Ann"
+        ],
+        [
+            "Hlaingthaya",
+            "Line_Hlaingthaya_Athoke"
+        ],
+        [
+            "Line_Hlaingthaya_Athoke",
+            "Athoke"
+        ],
+        [
+            "Mandalay",
+            "Line_Mandalay_Thapyewa"
+        ],
+        [
+            "Line_Mandalay_Thapyewa",
+            "Thapyewa"
+        ],
+        [
+            "Yeywa",
+            "Line_Yeywa_Mandalay"
+        ],
+        [
+            "Line_Yeywa_Mandalay",
+            "Mandalay"
+        ],
+        [
+            "Chaunguu",
+            "Line_Chaunguu_Nyaungbingyi"
+        ],
+        [
+            "Line_Chaunguu_Nyaungbingyi",
+            "Nyaungbingyi"
+        ],
+        [
+            "Hlaingthaya",
+            "Line_Hlaingthaya_Kyaiklatt"
+        ],
+        [
+            "Line_Hlaingthaya_Kyaiklatt",
+            "Kyaiklatt"
+        ],
+        [
+            "Minhla",
+            "Line_Minhla_Hlaingthaya"
+        ],
+        [
+            "Line_Minhla_Hlaingthaya",
+            "Hlaingthaya"
+        ],
+        [
+            "Shwedaung",
+            "Line_Shwedaung_Yangon"
+        ],
+        [
+            "Line_Shwedaung_Yangon",
+            "Yangon"
+        ],
+        [
+            "Kun",
+            "Line_Kun_Yangon"
+        ],
+        [
+            "Line_Kun_Yangon",
+            "Yangon"
+        ],
+        [
+            "Kamanat",
+            "Line_Kamanat_Minhla"
+        ],
+        [
+            "Line_Kamanat_Minhla",
+            "Minhla"
+        ],
+        [
+            "Kamanat",
+            "Line_Kamanat_Yangon"
+        ],
+        [
+            "Line_Kamanat_Yangon",
+            "Yangon"
+        ],
+        [
+            "Sittaung",
+            "Line_Sittaung_Kamanat"
+        ],
+        [
+            "Line_Sittaung_Kamanat",
+            "Kamanat"
+        ],
+        [
+            "Kun",
+            "Line_Kun_Kamanat"
+        ],
+        [
+            "Line_Kun_Kamanat",
+            "Kamanat"
+        ],
+        [
+            "Kyaukphyu",
+            "Line_Kyaukphyu_Taungup"
+        ],
+        [
+            "Line_Kyaukphyu_Taungup",
+            "Taungup"
+        ],
+        [
+            "Lawpita",
+            "Line_Lawpita_Naypyitaw"
+        ],
+        [
+            "Line_Lawpita_Naypyitaw",
+            "Naypyitaw"
+        ],
+        [
+            "Lawpita",
+            "Line_Lawpita_Taungoo"
+        ],
+        [
+            "Line_Lawpita_Taungoo",
+            "Taungoo"
+        ],
+        [
+            "Shweli",
+            "Line_Shweli_Mansan"
+        ],
+        [
+            "Line_Shweli_Mansan",
+            "Mansan"
+        ],
+        [
+            "Mansan",
+            "Line_Mansan_Mandalay"
+        ],
+        [
+            "Line_Mansan_Mandalay",
+            "Mandalay"
+        ],
+        [
+            "Mawlamyaing",
+            "Line_Mawlamyaing_Thaton"
+        ],
+        [
+            "Line_Mawlamyaing_Thaton",
+            "Thaton"
+        ],
+        [
+            "Shwedaung",
+            "Line_Shwedaung_Minhla"
+        ],
+        [
+            "Line_Shwedaung_Minhla",
+            "Minhla"
+        ],
+        [
+            "Naypyitaw",
+            "Line_Naypyitaw_Taungdwingyi"
+        ],
+        [
+            "Line_Naypyitaw_Taungdwingyi",
+            "Taungdwingyi"
+        ],
+        [
+            "Mandalay",
+            "Line_Mandalay_Nyaungbingyi"
+        ],
+        [
+            "Line_Mandalay_Nyaungbingyi",
+            "Nyaungbingyi"
+        ],
+        [
+            "Oakshitpin",
+            "Line_Oakshitpin_Shwedaung"
+        ],
+        [
+            "Line_Oakshitpin_Shwedaung",
+            "Shwedaung"
+        ],
+        [
+            "Taungup",
+            "Line_Taungup_Oakshitpin"
+        ],
+        [
+            "Line_Taungup_Oakshitpin",
+            "Oakshitpin"
+        ],
+        [
+            "Taungoo",
+            "Line_Taungoo_Kun"
+        ],
+        [
+            "Line_Taungoo_Kun",
+            "Kun"
+        ],
+        [
+            "Taungdwingyi",
+            "Line_Taungdwingyi_Shwedaung"
+        ],
+        [
+            "Line_Taungdwingyi_Shwedaung",
+            "Shwedaung"
+        ],
+        [
+            "Shwekyin",
+            "Line_Shwekyin_Kun"
+        ],
+        [
+            "Line_Shwekyin_Kun",
+            "Kun"
+        ],
+        [
+            "Thapyewa",
+            "Line_Thapyewa_Naypyitaw"
+        ],
+        [
+            "Line_Thapyewa_Naypyitaw",
+            "Naypyitaw"
+        ],
+        [
+            "Thaton",
+            "Line_Thaton_Sittaung"
+        ],
+        [
+            "Line_Thaton_Sittaung",
+            "Sittaung"
+        ],
+        [
+            "Thapyewa",
+            "Line_Thapyewa_Taungdwingyi"
+        ],
+        [
+            "Line_Thapyewa_Taungdwingyi",
+            "Taungdwingyi"
+        ],
+        [
+            "Naypyitaw",
+            "Line_Naypyitaw_Taungoo"
+        ],
+        [
+            "Line_Naypyitaw_Taungoo",
+            "Taungoo"
+        ],
+        [
+            "Yeywa",
+            "Line_Yeywa_Thapyewa"
+        ],
+        [
+            "Line_Yeywa_Thapyewa",
+            "Thapyewa"
+        ],
+        [
+            "Nyaungbingyi",
+            "Line_Nyaungbingyi_132kV-bus"
+        ],
+        [
+            "Line_Nyaungbingyi_132kV-bus",
+            "132kV-bus"
+        ],
+        [
+            "Mann",
+            "Line_Mann_132kV-bus"
+        ],
+        [
+            "Line_Mann_132kV-bus",
+            "132kV-bus"
+        ],
+        [
+            "Taungdwingyi",
+            "Line_Taungdwingyi_132kV-bus"
+        ],
+        [
+            "Line_Taungdwingyi_132kV-bus",
+            "132kV-bus"
+        ],
+        [
+            "Lawpita",
+            "Line_Lawpita_132kV-bus"
+        ],
+        [
+            "Line_Lawpita_132kV-bus",
+            "132kV-bus"
+        ],
+        [
+            "Thapyewa",
+            "Line_Thapyewa_132kV-bus"
+        ],
+        [
+            "Line_Thapyewa_132kV-bus",
+            "132kV-bus"
+        ],
+        [
+            "Mandalay",
+            "Line_Mandalay_132kV-bus"
+        ],
+        [
+            "Line_Mandalay_132kV-bus",
+            "132kV-bus"
+        ],
+        [
+            "Mawlamyaing",
+            "Line_Mawlamyaing_Kabauk"
+        ],
+        [
+            "Line_Mawlamyaing_Kabauk",
+            "Kabauk"
+        ],
+        [
+            "Kabauk",
+            "Line_Kabauk_Tanintharyi"
+        ],
+        [
+            "Line_Kabauk_Tanintharyi",
+            "Tanintharyi"
+        ],
+        [
+            "Mandalay",
+            "Line_Mandalay_Nabar"
+        ],
+        [
+            "Line_Mandalay_Nabar",
+            "Nabar"
+        ],
+        [
+            "Nabar",
+            "Line_Nabar_Bhamo"
+        ],
+        [
+            "Line_Nabar_Bhamo",
+            "Bhamo"
+        ],
+        [
+            "Nabar",
+            "Line_Nabar_Chipwi"
+        ],
+        [
+            "Line_Nabar_Chipwi",
+            "Chipwi"
+        ],
+        [
+            "Chipwi",
+            "Line_Chipwi_Pisa"
+        ],
+        [
+            "Line_Chipwi_Pisa",
+            "Pisa"
+        ],
+        [
+            "Thapyewa",
+            "Line_Thapyewa_Namsang"
+        ],
+        [
+            "Line_Thapyewa_Namsang",
+            "Namsang"
+        ],
+        [
+            "Namsang",
+            "Line_Namsang_Keng Tong"
+        ],
+        [
+            "Line_Namsang_Keng Tong",
+            "Keng Tong"
+        ],
+        [
+            "Mansan",
+            "Load_Mansan"
+        ],
+        [
+            "Thapyewa",
+            "Load_Thapyewa"
+        ],
+        [
+            "Naypyitaw",
+            "Load_Naypyitaw"
+        ],
+        [
+            "Shwedaung",
+            "Load_Shwedaung"
+        ],
+        [
+            "Oakshitpin",
+            "Load_Oakshitpin"
+        ],
+        [
+            "Taungup",
+            "Load_Taungup"
+        ],
+        [
+            "Ann",
+            "Load_Ann"
+        ],
+        [
+            "Ponnakyun",
+            "Load_Ponnakyun"
+        ],
+        [
+            "Minhla",
+            "Load_Minhla"
+        ],
+        [
+            "Athoke",
+            "Load_Athoke"
+        ],
+        [
+            "Kun",
+            "Load_Kun"
+        ],
+        [
+            "Yangon",
+            "Load_Yangon"
+        ],
+        [
+            "Kamanat",
+            "Load_Kamanat"
+        ],
+        [
+            "Sittaung",
+            "Load_Sittaung"
+        ],
+        [
+            "Mandalay",
+            "Load_Mandalay"
+        ],
+        [
+            "Hlaingthaya",
+            "Load_Hlaingthaya"
+        ],
+        [
+            "Kyaiklatt",
+            "Load_Kyaiklatt"
+        ],
+        [
+            "Nyaungbingyi",
+            "Load_Nyaungbingyi"
+        ],
+        [
+            "132kV-bus",
+            "Load_132kV-bus"
+        ]
+    ],
+    "parameters": {
+        "GEN_Minbu:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Minbu"
+        },
+        "GEN_Chauk:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Chauk"
+        },
+        "GEN_Taungdwingyi:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Taungdwingyi"
+        },
+        "GEN_Ta Nyaung:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Ta Nyaung"
+        },
+        "GEN_Buddhakone:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Buddhakone"
+        },
+        "GEN_Chaungku:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Chaungku"
+        },
+        "GEN_Kyungchaung:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Kyungchaung"
+        },
+        "GEN_Belin:max_flow": {
+            "type": "constant",
+            "value": 280.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Letpanhla:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Letpanhla"
+        },
+        "GEN_Myingyan:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Myingyan"
+        },
+        "GEN_Tharzi:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Tharzi"
+        },
+        "GEN_Thapyaywa:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Thapyaywa"
+        },
+        "GEN_Taungoo:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Taungoo"
+        },
+        "GEN_Tharyargone:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Tharyargone"
+        },
+        "GEN_Thephyu:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Thephyu"
+        },
+        "GEN_Kamarnat:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Kamarnat"
+        },
+        "GEN_Minhla:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Minhla"
+        },
+        "GEN_Oakshitpin:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Oakshitpin"
+        },
+        "GEN_Shwedaung:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Shwedaung"
+        },
+        "GEN_Aungchanthar:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Aungchanthar"
+        },
+        "GEN_Ngapyawdine:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Ngapyawdine"
+        },
+        "GEN_Nyaungpingyi:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Nyaungpingyi"
+        },
+        "GEN_Ohntaw:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Ohntaw"
+        },
+        "GEN_Wartaya:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Wartaya"
+        },
+        "GEN_Nay Pyi Taw (1):max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Nay Pyi Taw (1)"
+        },
+        "GEN_Nay Pyi Taw (2):max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Nay Pyi Taw (2)"
+        },
+        "GEN_Shwemyo:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Shwemyo"
+        },
+        "GEN_Pathein:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Pathein"
+        },
+        "GEN_Kyaiklat:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Kyaiklat"
+        },
+        "GEN_Athoke:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Athoke"
+        },
+        "GEN_Myanaung:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Myanaung"
+        },
+        "GEN_Wind-1:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Wind-1"
+        },
+        "GEN_Wind-2:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Wind-2"
+        },
+        "GEN_Wind-3:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Wind-3"
+        },
+        "GEN_Wind-4:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Wind-4"
+        },
+        "GEN_Wind-5:max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_renewables_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "GEN_Wind-5"
+        },
+        "GEN_PHYU:max_flow": {
+            "type": "constant",
+            "value": 40.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_BALUCHAUNG (1):max_flow": {
+            "type": "constant",
+            "value": 28.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_BALUCHAUNG (2):max_flow": {
+            "type": "constant",
+            "value": 168.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_BALUCHAUNG (3):max_flow": {
+            "type": "constant",
+            "value": 52.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_YEYWA (LOWER)-1:max_flow": {
+            "type": "constant",
+            "value": 395.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_YEYWA (LOWER)-2:max_flow": {
+            "type": "constant",
+            "value": 395.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_SHWELI (1):max_flow": {
+            "type": "constant",
+            "value": 600.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_MONE:max_flow": {
+            "type": "constant",
+            "value": 75.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_KINDA:max_flow": {
+            "type": "constant",
+            "value": 56.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_THAPHANZEIK:max_flow": {
+            "type": "constant",
+            "value": 30.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_KABAUNG:max_flow": {
+            "type": "constant",
+            "value": 30.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_SEDAWGYI:max_flow": {
+            "type": "constant",
+            "value": 25.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_YENWE:max_flow": {
+            "type": "constant",
+            "value": 25.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_ZAUNGTU:max_flow": {
+            "type": "constant",
+            "value": 20.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_ZAWGYI (1):max_flow": {
+            "type": "constant",
+            "value": 18.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_ZAWGYI (2):max_flow": {
+            "type": "constant",
+            "value": 12.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Kyeng Tawng (KENGTAWNG):max_flow": {
+            "type": "constant",
+            "value": 54.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_SHWEKYIN:max_flow": {
+            "type": "constant",
+            "value": 75.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Kun (Kune or Kunchaung):max_flow": {
+            "type": "constant",
+            "value": 60.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_KYEEON KYEEWA:max_flow": {
+            "type": "constant",
+            "value": 74.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_THAUK-YE-KHAT (2):max_flow": {
+            "type": "constant",
+            "value": 120.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_NANCHO:max_flow": {
+            "type": "constant",
+            "value": 40.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_PAUNGLAUNG  :max_flow": {
+            "type": "constant",
+            "value": 280.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_UPPER PAUNGLAUNG:max_flow": {
+            "type": "constant",
+            "value": 140.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_MYOGYI:max_flow": {
+            "type": "constant",
+            "value": 30.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_MYITTHA:max_flow": {
+            "type": "constant",
+            "value": 40.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Baluchaung (upper):max_flow": {
+            "type": "constant",
+            "value": 30.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Bawgata:max_flow": {
+            "type": "constant",
+            "value": 160.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Buywa (upper):max_flow": {
+            "type": "constant",
+            "value": 150.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Buywa:max_flow": {
+            "type": "constant",
+            "value": 42.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Chipwi:max_flow": {
+            "type": "constant",
+            "value": 3400.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Dapein 2:max_flow": {
+            "type": "constant",
+            "value": 140.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Deedoke:max_flow": {
+            "type": "constant",
+            "value": 60.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Dum Ban:max_flow": {
+            "type": "constant",
+            "value": 130.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Gaw Lan:max_flow": {
+            "type": "constant",
+            "value": 120.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Hawkham (upper) :max_flow": {
+            "type": "constant",
+            "value": 180.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_He Kou:max_flow": {
+            "type": "constant",
+            "value": 138.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Hkankawn:max_flow": {
+            "type": "constant",
+            "value": 140.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Pisa:max_flow": {
+            "type": "constant",
+            "value": 2000.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Tamanthi :max_flow": {
+            "type": "constant",
+            "value": 1200.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Hutgyi:max_flow": {
+            "type": "constant",
+            "value": 1360.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Keng Tawng (upper):max_flow": {
+            "type": "constant",
+            "value": 51.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Keng Tong:max_flow": {
+            "type": "constant",
+            "value": 170.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Keng Yang:max_flow": {
+            "type": "constant",
+            "value": 70.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Khaunglanphu:max_flow": {
+            "type": "constant",
+            "value": 2700.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_KunLong:max_flow": {
+            "type": "constant",
+            "value": 1400.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Lawngdin:max_flow": {
+            "type": "constant",
+            "value": 600.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Lemro 1:max_flow": {
+            "type": "constant",
+            "value": 600.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Laza:max_flow": {
+            "type": "constant",
+            "value": 1900.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Lemro 2:max_flow": {
+            "type": "constant",
+            "value": 90.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Nam Pawn (lower):max_flow": {
+            "type": "constant",
+            "value": 105.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Mong Ton:max_flow": {
+            "type": "constant",
+            "value": 7000.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Manipur:max_flow": {
+            "type": "constant",
+            "value": 380.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Mantong:max_flow": {
+            "type": "constant",
+            "value": 225.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Myitsone:max_flow": {
+            "type": "constant",
+            "value": 6000.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Nam Hka:max_flow": {
+            "type": "constant",
+            "value": 210.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Nam Hsim:max_flow": {
+            "type": "constant",
+            "value": 30.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Nam Lang:max_flow": {
+            "type": "constant",
+            "value": 210.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Nam Li:max_flow": {
+            "type": "constant",
+            "value": 165.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Nam Lin:max_flow": {
+            "type": "constant",
+            "value": 36.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Nam Paw:max_flow": {
+            "type": "constant",
+            "value": 20.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Nam Pawn (upper)  :max_flow": {
+            "type": "constant",
+            "value": 150.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Nam Tabak I:max_flow": {
+            "type": "constant",
+            "value": 141.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Nam Tu:max_flow": {
+            "type": "constant",
+            "value": 100.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Naopha:max_flow": {
+            "type": "constant",
+            "value": 1200.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Paung Laung (middle):max_flow": {
+            "type": "constant",
+            "value": 100.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Hpak Nam:max_flow": {
+            "type": "constant",
+            "value": 105.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Hpi Hseng:max_flow": {
+            "type": "constant",
+            "value": 45.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Renan:max_flow": {
+            "type": "constant",
+            "value": 1200.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Sedawgyi (upper):max_flow": {
+            "type": "constant",
+            "value": 64.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Shweli 2:max_flow": {
+            "type": "constant",
+            "value": 520.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Shweli 3:max_flow": {
+            "type": "constant",
+            "value": 1050.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Suo Lwe:max_flow": {
+            "type": "constant",
+            "value": 240.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Taninthayi:max_flow": {
+            "type": "constant",
+            "value": 600.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Thahtay:max_flow": {
+            "type": "constant",
+            "value": 111.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Tongxinqiao:max_flow": {
+            "type": "constant",
+            "value": 340.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Wutsok:max_flow": {
+            "type": "constant",
+            "value": 1800.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Yeywa (middle):max_flow": {
+            "type": "constant",
+            "value": 700.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Yeywa (upper):max_flow": {
+            "type": "constant",
+            "value": 280.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Ywathit:max_flow": {
+            "type": "constant",
+            "value": 4000.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Nam Tabak II:max_flow": {
+            "type": "constant",
+            "value": 144.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Mong Hsat:max_flow": {
+            "type": "constant",
+            "value": 30.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Tawog Hka:max_flow": {
+            "type": "constant",
+            "value": 50.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Ta Rung Hka:max_flow": {
+            "type": "constant",
+            "value": 150.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Ta Nai Hka:max_flow": {
+            "type": "constant",
+            "value": 15.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Thauk Ye Khat 1:max_flow": {
+            "type": "constant",
+            "value": 150.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Yunzalin:max_flow": {
+            "type": "constant",
+            "value": 100.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Lam Pha:max_flow": {
+            "type": "constant",
+            "value": 19.5,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Mi Chaung:max_flow": {
+            "type": "constant",
+            "value": 200.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_U Yu Chaung:max_flow": {
+            "type": "constant",
+            "value": 12.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Thein Kun Chaung:max_flow": {
+            "type": "constant",
+            "value": 25.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Tha Gyet Chaung:max_flow": {
+            "type": "constant",
+            "value": 20.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Glohong Kra:max_flow": {
+            "type": "constant",
+            "value": 40.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Myet Taw Chaung:max_flow": {
+            "type": "constant",
+            "value": 10.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Mindon:max_flow": {
+            "type": "constant",
+            "value": 18.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Than Dwe:max_flow": {
+            "type": "constant",
+            "value": 39.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Kyein Ta Li:max_flow": {
+            "type": "constant",
+            "value": 28.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Nam Hkok:max_flow": {
+            "type": "constant",
+            "value": 30.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Saing Din:max_flow": {
+            "type": "constant",
+            "value": 76.5,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Sar Ra Wa Chaung:max_flow": {
+            "type": "constant",
+            "value": 11.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Mongwa:max_flow": {
+            "type": "constant",
+            "value": 66.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Chipwi Nge:max_flow": {
+            "type": "constant",
+            "value": 99.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Mali:max_flow": {
+            "type": "constant",
+            "value": 11.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "GEN_Dapein 1:max_flow": {
+            "type": "constant",
+            "value": 240.0,
+            "is_variable": false,
+            "upper_bounds": 10000,
+            "lower_bounds": 0
+        },
+        "Load_Mansan_max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_loads_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "Load_Mansan"
+        },
+        "Load_Thapyewa_max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_loads_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "Load_Thapyewa"
+        },
+        "Load_Naypyitaw_max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_loads_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "Load_Naypyitaw"
+        },
+        "Load_Shwedaung_max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_loads_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "Load_Shwedaung"
+        },
+        "Load_Oakshitpin_max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_loads_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "Load_Oakshitpin"
+        },
+        "Load_Taungup_max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_loads_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "Load_Taungup"
+        },
+        "Load_Ann_max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_loads_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "Load_Ann"
+        },
+        "Load_Ponnakyun_max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_loads_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "Load_Ponnakyun"
+        },
+        "Load_Minhla_max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_loads_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "Load_Minhla"
+        },
+        "Load_Athoke_max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_loads_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "Load_Athoke"
+        },
+        "Load_Kun_max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_loads_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "Load_Kun"
+        },
+        "Load_Yangon_max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_loads_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "Load_Yangon"
+        },
+        "Load_Kamanat_max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_loads_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "Load_Kamanat"
+        },
+        "Load_Sittaung_max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_loads_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "Load_Sittaung"
+        },
+        "Load_Mandalay_max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_loads_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "Load_Mandalay"
+        },
+        "Load_Hlaingthaya_max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_loads_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "Load_Hlaingthaya"
+        },
+        "Load_Kyaiklatt_max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_loads_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "Load_Kyaiklatt"
+        },
+        "Load_Nyaungbingyi_max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_loads_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "Load_Nyaungbingyi"
+        },
+        "Load_132kV-bus_max_flow": {
+            "type": "dataframe",
+            "url": "./Myanmar_30bus_loads_Mikiyas_style.h5",
+            "index_col": "timestamp",
+            "column": "Load_132kV-bus"
+        }
+    },
+    "recorders": {
+        "GEN_PHYU_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_PHYU"
+        },
+        "GEN_BALUCHAUNG (1)_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_BALUCHAUNG (1)"
+        },
+        "GEN_BALUCHAUNG (2)_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_BALUCHAUNG (2)"
+        },
+        "GEN_BALUCHAUNG (3)_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_BALUCHAUNG (3)"
+        },
+        "GEN_YEYWA (LOWER)-1_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_YEYWA (LOWER)-1"
+        },
+        "GEN_YEYWA (LOWER)-2_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_YEYWA (LOWER)-2"
+        },
+        "GEN_SHWELI (1)_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_SHWELI (1)"
+        },
+        "GEN_MONE_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_MONE"
+        },
+        "GEN_KINDA_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_KINDA"
+        },
+        "GEN_THAPHANZEIK_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_THAPHANZEIK"
+        },
+        "GEN_KABAUNG_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_KABAUNG"
+        },
+        "GEN_SEDAWGYI_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_SEDAWGYI"
+        },
+        "GEN_YENWE_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_YENWE"
+        },
+        "GEN_ZAUNGTU_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_ZAUNGTU"
+        },
+        "GEN_ZAWGYI (1)_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_ZAWGYI (1)"
+        },
+        "GEN_ZAWGYI (2)_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_ZAWGYI (2)"
+        },
+        "GEN_Kyeng Tawng (KENGTAWNG)_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Kyeng Tawng (KENGTAWNG)"
+        },
+        "GEN_SHWEKYIN_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_SHWEKYIN"
+        },
+        "GEN_Kun (Kune or Kunchaung)_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Kun (Kune or Kunchaung)"
+        },
+        "GEN_KYEEON KYEEWA_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_KYEEON KYEEWA"
+        },
+        "GEN_THAUK-YE-KHAT (2)_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_THAUK-YE-KHAT (2)"
+        },
+        "GEN_NANCHO_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_NANCHO"
+        },
+        "GEN_PAUNGLAUNG  _recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_PAUNGLAUNG  "
+        },
+        "GEN_UPPER PAUNGLAUNG_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_UPPER PAUNGLAUNG"
+        },
+        "GEN_MYOGYI_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_MYOGYI"
+        },
+        "GEN_MYITTHA_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_MYITTHA"
+        },
+        "GEN_Baluchaung (upper)_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Baluchaung (upper)"
+        },
+        "GEN_Bawgata_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Bawgata"
+        },
+        "GEN_Belin_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Belin"
+        },
+        "GEN_Buywa (upper)_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Buywa (upper)"
+        },
+        "GEN_Buywa_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Buywa"
+        },
+        "GEN_Chipwi_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Chipwi"
+        },
+        "GEN_Dapein 2_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Dapein 2"
+        },
+        "GEN_Deedoke_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Deedoke"
+        },
+        "GEN_Dum Ban_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Dum Ban"
+        },
+        "GEN_Gaw Lan_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Gaw Lan"
+        },
+        "GEN_Hawkham (upper) _recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Hawkham (upper) "
+        },
+        "GEN_He Kou_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_He Kou"
+        },
+        "GEN_Hkankawn_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Hkankawn"
+        },
+        "GEN_Pisa_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Pisa"
+        },
+        "GEN_Tamanthi _recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Tamanthi "
+        },
+        "GEN_Hutgyi_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Hutgyi"
+        },
+        "GEN_Keng Tawng (upper)_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Keng Tawng (upper)"
+        },
+        "GEN_Keng Tong_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Keng Tong"
+        },
+        "GEN_Keng Yang_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Keng Yang"
+        },
+        "GEN_Khaunglanphu_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Khaunglanphu"
+        },
+        "GEN_KunLong_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_KunLong"
+        },
+        "GEN_Lawngdin_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Lawngdin"
+        },
+        "GEN_Lemro 1_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Lemro 1"
+        },
+        "GEN_Laza_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Laza"
+        },
+        "GEN_Lemro 2_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Lemro 2"
+        },
+        "GEN_Nam Pawn (lower)_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Nam Pawn (lower)"
+        },
+        "GEN_Mong Ton_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Mong Ton"
+        },
+        "GEN_Manipur_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Manipur"
+        },
+        "GEN_Mantong_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Mantong"
+        },
+        "GEN_Myitsone_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Myitsone"
+        },
+        "GEN_Nam Hka_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Nam Hka"
+        },
+        "GEN_Nam Hsim_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Nam Hsim"
+        },
+        "GEN_Nam Lang_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Nam Lang"
+        },
+        "GEN_Nam Li_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Nam Li"
+        },
+        "GEN_Nam Lin_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Nam Lin"
+        },
+        "GEN_Nam Paw_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Nam Paw"
+        },
+        "GEN_Nam Pawn (upper)  _recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Nam Pawn (upper)  "
+        },
+        "GEN_Nam Tabak I_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Nam Tabak I"
+        },
+        "GEN_Nam Tu_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Nam Tu"
+        },
+        "GEN_Naopha_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Naopha"
+        },
+        "GEN_Paung Laung (middle)_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Paung Laung (middle)"
+        },
+        "GEN_Hpak Nam_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Hpak Nam"
+        },
+        "GEN_Hpi Hseng_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Hpi Hseng"
+        },
+        "GEN_Renan_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Renan"
+        },
+        "GEN_Sedawgyi (upper)_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Sedawgyi (upper)"
+        },
+        "GEN_Shweli 2_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Shweli 2"
+        },
+        "GEN_Shweli 3_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Shweli 3"
+        },
+        "GEN_Suo Lwe_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Suo Lwe"
+        },
+        "GEN_Taninthayi_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Taninthayi"
+        },
+        "GEN_Thahtay_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Thahtay"
+        },
+        "GEN_Tongxinqiao_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Tongxinqiao"
+        },
+        "GEN_Wutsok_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Wutsok"
+        },
+        "GEN_Yeywa (middle)_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Yeywa (middle)"
+        },
+        "GEN_Yeywa (upper)_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Yeywa (upper)"
+        },
+        "GEN_Ywathit_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Ywathit"
+        },
+        "GEN_Nam Tabak II_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Nam Tabak II"
+        },
+        "GEN_Mong Hsat_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Mong Hsat"
+        },
+        "GEN_Tawog Hka_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Tawog Hka"
+        },
+        "GEN_Ta Rung Hka_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Ta Rung Hka"
+        },
+        "GEN_Ta Nai Hka_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Ta Nai Hka"
+        },
+        "GEN_Thauk Ye Khat 1_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Thauk Ye Khat 1"
+        },
+        "GEN_Yunzalin_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Yunzalin"
+        },
+        "GEN_Lam Pha_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Lam Pha"
+        },
+        "GEN_Mi Chaung_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Mi Chaung"
+        },
+        "GEN_U Yu Chaung_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_U Yu Chaung"
+        },
+        "GEN_Thein Kun Chaung_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Thein Kun Chaung"
+        },
+        "GEN_Tha Gyet Chaung_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Tha Gyet Chaung"
+        },
+        "GEN_Glohong Kra_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Glohong Kra"
+        },
+        "GEN_Myet Taw Chaung_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Myet Taw Chaung"
+        },
+        "GEN_Mindon_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Mindon"
+        },
+        "GEN_Than Dwe_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Than Dwe"
+        },
+        "GEN_Kyein Ta Li_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Kyein Ta Li"
+        },
+        "GEN_Nam Hkok_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Nam Hkok"
+        },
+        "GEN_Saing Din_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Saing Din"
+        },
+        "GEN_Sar Ra Wa Chaung_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Sar Ra Wa Chaung"
+        },
+        "GEN_Mongwa_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Mongwa"
+        },
+        "GEN_Chipwi Nge_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Chipwi Nge"
+        },
+        "GEN_Mali_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Mali"
+        },
+        "GEN_Dapein 1_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Dapein 1"
+        },
+        "MYA_Hydro": {
+            "type": "aggregatedrecorder",
+            "recorder_agg_func": "sum",
+            "recorders": [
+                "GEN_PHYU_recorder",
+                "GEN_BALUCHAUNG (1)_recorder",
+                "GEN_BALUCHAUNG (2)_recorder",
+                "GEN_BALUCHAUNG (3)_recorder",
+                "GEN_YEYWA (LOWER)-1_recorder",
+                "GEN_YEYWA (LOWER)-2_recorder",
+                "GEN_SHWELI (1)_recorder",
+                "GEN_MONE_recorder",
+                "GEN_KINDA_recorder",
+                "GEN_THAPHANZEIK_recorder",
+                "GEN_KABAUNG_recorder",
+                "GEN_SEDAWGYI_recorder",
+                "GEN_YENWE_recorder",
+                "GEN_ZAUNGTU_recorder",
+                "GEN_ZAWGYI (1)_recorder",
+                "GEN_ZAWGYI (2)_recorder",
+                "GEN_Kyeng Tawng (KENGTAWNG)_recorder",
+                "GEN_SHWEKYIN_recorder",
+                "GEN_Kun (Kune or Kunchaung)_recorder",
+                "GEN_KYEEON KYEEWA_recorder",
+                "GEN_THAUK-YE-KHAT (2)_recorder",
+                "GEN_NANCHO_recorder",
+                "GEN_PAUNGLAUNG  _recorder",
+                "GEN_UPPER PAUNGLAUNG_recorder",
+                "GEN_MYOGYI_recorder",
+                "GEN_MYITTHA_recorder",
+                "GEN_Baluchaung (upper)_recorder",
+                "GEN_Bawgata_recorder",
+                "GEN_Belin_recorder",
+                "GEN_Buywa (upper)_recorder",
+                "GEN_Buywa_recorder",
+                "GEN_Chipwi_recorder",
+                "GEN_Dapein 2_recorder",
+                "GEN_Deedoke_recorder",
+                "GEN_Dum Ban_recorder",
+                "GEN_Gaw Lan_recorder",
+                "GEN_Hawkham (upper) _recorder",
+                "GEN_He Kou_recorder",
+                "GEN_Hkankawn_recorder",
+                "GEN_Pisa_recorder",
+                "GEN_Tamanthi _recorder",
+                "GEN_Hutgyi_recorder",
+                "GEN_Keng Tawng (upper)_recorder",
+                "GEN_Keng Tong_recorder",
+                "GEN_Keng Yang_recorder",
+                "GEN_Khaunglanphu_recorder",
+                "GEN_KunLong_recorder",
+                "GEN_Lawngdin_recorder",
+                "GEN_Lemro 1_recorder",
+                "GEN_Laza_recorder",
+                "GEN_Lemro 2_recorder",
+                "GEN_Nam Pawn (lower)_recorder",
+                "GEN_Mong Ton_recorder",
+                "GEN_Manipur_recorder",
+                "GEN_Mantong_recorder",
+                "GEN_Myitsone_recorder",
+                "GEN_Nam Hka_recorder",
+                "GEN_Nam Hsim_recorder",
+                "GEN_Nam Lang_recorder",
+                "GEN_Nam Li_recorder",
+                "GEN_Nam Lin_recorder",
+                "GEN_Nam Paw_recorder",
+                "GEN_Nam Pawn (upper)  _recorder",
+                "GEN_Nam Tabak I_recorder",
+                "GEN_Nam Tu_recorder",
+                "GEN_Naopha_recorder",
+                "GEN_Paung Laung (middle)_recorder",
+                "GEN_Hpak Nam_recorder",
+                "GEN_Hpi Hseng_recorder",
+                "GEN_Renan_recorder",
+                "GEN_Sedawgyi (upper)_recorder",
+                "GEN_Shweli 2_recorder",
+                "GEN_Shweli 3_recorder",
+                "GEN_Suo Lwe_recorder",
+                "GEN_Taninthayi_recorder",
+                "GEN_Thahtay_recorder",
+                "GEN_Tongxinqiao_recorder",
+                "GEN_Wutsok_recorder",
+                "GEN_Yeywa (middle)_recorder",
+                "GEN_Yeywa (upper)_recorder",
+                "GEN_Ywathit_recorder",
+                "GEN_Nam Tabak II_recorder",
+                "GEN_Mong Hsat_recorder",
+                "GEN_Tawog Hka_recorder",
+                "GEN_Ta Rung Hka_recorder",
+                "GEN_Ta Nai Hka_recorder",
+                "GEN_Thauk Ye Khat 1_recorder",
+                "GEN_Yunzalin_recorder",
+                "GEN_Lam Pha_recorder",
+                "GEN_Mi Chaung_recorder",
+                "GEN_U Yu Chaung_recorder",
+                "GEN_Thein Kun Chaung_recorder",
+                "GEN_Tha Gyet Chaung_recorder",
+                "GEN_Glohong Kra_recorder",
+                "GEN_Myet Taw Chaung_recorder",
+                "GEN_Mindon_recorder",
+                "GEN_Than Dwe_recorder",
+                "GEN_Kyein Ta Li_recorder",
+                "GEN_Nam Hkok_recorder",
+                "GEN_Saing Din_recorder",
+                "GEN_Sar Ra Wa Chaung_recorder",
+                "GEN_Mongwa_recorder",
+                "GEN_Chipwi Nge_recorder",
+                "GEN_Mali_recorder",
+                "GEN_Dapein 1_recorder"
+            ]
+        },
+        "Load_Mansan:curtailment": {
+            "type": "NumpyArrayNodeDeficitRecorder",
+            "node": "Load_Mansan"
+        },
+        "Load_Thapyewa:curtailment": {
+            "type": "NumpyArrayNodeDeficitRecorder",
+            "node": "Load_Thapyewa"
+        },
+        "Load_Naypyitaw:curtailment": {
+            "type": "NumpyArrayNodeDeficitRecorder",
+            "node": "Load_Naypyitaw"
+        },
+        "Load_Shwedaung:curtailment": {
+            "type": "NumpyArrayNodeDeficitRecorder",
+            "node": "Load_Shwedaung"
+        },
+        "Load_Oakshitpin:curtailment": {
+            "type": "NumpyArrayNodeDeficitRecorder",
+            "node": "Load_Oakshitpin"
+        },
+        "Load_Taungup:curtailment": {
+            "type": "NumpyArrayNodeDeficitRecorder",
+            "node": "Load_Taungup"
+        },
+        "Load_Ann:curtailment": {
+            "type": "NumpyArrayNodeDeficitRecorder",
+            "node": "Load_Ann"
+        },
+        "Load_Ponnakyun:curtailment": {
+            "type": "NumpyArrayNodeDeficitRecorder",
+            "node": "Load_Ponnakyun"
+        },
+        "Load_Minhla:curtailment": {
+            "type": "NumpyArrayNodeDeficitRecorder",
+            "node": "Load_Minhla"
+        },
+        "Load_Athoke:curtailment": {
+            "type": "NumpyArrayNodeDeficitRecorder",
+            "node": "Load_Athoke"
+        },
+        "Load_Kun:curtailment": {
+            "type": "NumpyArrayNodeDeficitRecorder",
+            "node": "Load_Kun"
+        },
+        "Load_Yangon:curtailment": {
+            "type": "NumpyArrayNodeDeficitRecorder",
+            "node": "Load_Yangon"
+        },
+        "Load_Kamanat:curtailment": {
+            "type": "NumpyArrayNodeDeficitRecorder",
+            "node": "Load_Kamanat"
+        },
+        "Load_Sittaung:curtailment": {
+            "type": "NumpyArrayNodeDeficitRecorder",
+            "node": "Load_Sittaung"
+        },
+        "Load_Mandalay:curtailment": {
+            "type": "NumpyArrayNodeDeficitRecorder",
+            "node": "Load_Mandalay"
+        },
+        "Load_Hlaingthaya:curtailment": {
+            "type": "NumpyArrayNodeDeficitRecorder",
+            "node": "Load_Hlaingthaya"
+        },
+        "Load_Kyaiklatt:curtailment": {
+            "type": "NumpyArrayNodeDeficitRecorder",
+            "node": "Load_Kyaiklatt"
+        },
+        "Load_Nyaungbingyi:curtailment": {
+            "type": "NumpyArrayNodeDeficitRecorder",
+            "node": "Load_Nyaungbingyi"
+        },
+        "Load_132kV-bus:curtailment": {
+            "type": "NumpyArrayNodeDeficitRecorder",
+            "node": "Load_132kV-bus"
+        },
+        "MYA_load_curtailment": {
+            "type": "aggregatedrecorder",
+            "recorder_agg_func": "sum",
+            "recorders": [
+                "Load_Mansan:curtailment",
+                "Load_Thapyewa:curtailment",
+                "Load_Naypyitaw:curtailment",
+                "Load_Shwedaung:curtailment",
+                "Load_Oakshitpin:curtailment",
+                "Load_Taungup:curtailment",
+                "Load_Ann:curtailment",
+                "Load_Ponnakyun:curtailment",
+                "Load_Minhla:curtailment",
+                "Load_Athoke:curtailment",
+                "Load_Kun:curtailment",
+                "Load_Yangon:curtailment",
+                "Load_Kamanat:curtailment",
+                "Load_Sittaung:curtailment",
+                "Load_Mandalay:curtailment",
+                "Load_Hlaingthaya:curtailment",
+                "Load_Kyaiklatt:curtailment",
+                "Load_Nyaungbingyi:curtailment",
+                "Load_132kV-bus:curtailment"
+            ]
+        },
+        "GEN_KYUNCHAUNG, GEN_MANN, GEN_Power Gen (Kyaukse) -1, GEN_Power Gen (Kyaukse) -2, GEN_Tigit (TIKYIT)_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_KYUNCHAUNG, GEN_MANN, GEN_Power Gen (Kyaukse) -1, GEN_Power Gen (Kyaukse) -2, GEN_Tigit (TIKYIT)"
+        },
+        "GEN_Thaton A, GEN_Thaton B, GEN_Thaton (WB), GEN_Thaton (WB) (STEAM TURBINE)_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Thaton A, GEN_Thaton B, GEN_Thaton (WB), GEN_Thaton (WB) (STEAM TURBINE)"
+        },
+        "GEN_Mawlamying (ML) A, GEN_Mawlamying (ML) B, GEN_Mawlamying (ML) A, GEN_Mawlamying (ML) B_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Mawlamying (ML) A, GEN_Mawlamying (ML) B, GEN_Mawlamying (ML) A, GEN_Mawlamying (ML) B"
+        },
+        "GEN_SHEWTAUNG_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_SHEWTAUNG"
+        },
+        "GEN_Myingyan (V Power 1), GEN_Myingyan (V Power 2), GEN_Myingyan (Sembcrop), GEN_Myingyan (Sembcrop)_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Myingyan (V Power 1), GEN_Myingyan (V Power 2), GEN_Myingyan (Sembcrop), GEN_Myingyan (Sembcrop)"
+        },
+        "GEN_Kyauk Phyu (V Power 1), GEN_Kyauk Phyu (V Power 2)_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Kyauk Phyu (V Power 1), GEN_Kyauk Phyu (V Power 2)"
+        },
+        "GEN_Hlawga, GEN_Hlawga (MCP-1), GEN_Hlawga (MCP-2), GEN_Thaketa, GEN_Thaketa (Max), GEN_Thaketa (U Energy), GEN_Thilawa, GEN_Hlawga (STEAM TURBINE), GEN_Thaketa (STEAM TURBINE), GEN_Thaketa (U Energy)_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Hlawga, GEN_Hlawga (MCP-1), GEN_Hlawga (MCP-2), GEN_Thaketa, GEN_Thaketa (Max), GEN_Thaketa (U Energy), GEN_Thilawa, GEN_Hlawga (STEAM TURBINE), GEN_Thaketa (STEAM TURBINE), GEN_Thaketa (U Energy)"
+        },
+        "GEN_Ywama A, GEN_Ywama B, GEN_Ywama (EGAT), GEN_Ywama (UPP), GEN_Ahlone, GEN_Ahlone (Toyo Thai), GEN_Ywama, GEN_Ahlone (STEAM TURBINE), GEN_Ahlone (Toyo Thai) (STEAM TURBINE)_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Ywama A, GEN_Ywama B, GEN_Ywama (EGAT), GEN_Ywama (UPP), GEN_Ahlone, GEN_Ahlone (Toyo Thai), GEN_Ywama, GEN_Ahlone (STEAM TURBINE), GEN_Ahlone (Toyo Thai) (STEAM TURBINE)"
+        },
+        "MYA_nonrenewable_gen": {
+            "type": "aggregatedrecorder",
+            "recorder_agg_func": "sum",
+            "recorders": [
+                "GEN_KYUNCHAUNG, GEN_MANN, GEN_Power Gen (Kyaukse) -1, GEN_Power Gen (Kyaukse) -2, GEN_Tigit (TIKYIT)_recorder",
+                "GEN_Thaton A, GEN_Thaton B, GEN_Thaton (WB), GEN_Thaton (WB) (STEAM TURBINE)_recorder",
+                "GEN_Mawlamying (ML) A, GEN_Mawlamying (ML) B, GEN_Mawlamying (ML) A, GEN_Mawlamying (ML) B_recorder",
+                "GEN_SHEWTAUNG_recorder",
+                "GEN_Myingyan (V Power 1), GEN_Myingyan (V Power 2), GEN_Myingyan (Sembcrop), GEN_Myingyan (Sembcrop)_recorder",
+                "GEN_Kyauk Phyu (V Power 1), GEN_Kyauk Phyu (V Power 2)_recorder",
+                "GEN_Hlawga, GEN_Hlawga (MCP-1), GEN_Hlawga (MCP-2), GEN_Thaketa, GEN_Thaketa (Max), GEN_Thaketa (U Energy), GEN_Thilawa, GEN_Hlawga (STEAM TURBINE), GEN_Thaketa (STEAM TURBINE), GEN_Thaketa (U Energy)_recorder",
+                "GEN_Ywama A, GEN_Ywama B, GEN_Ywama (EGAT), GEN_Ywama (UPP), GEN_Ahlone, GEN_Ahlone (Toyo Thai), GEN_Ywama, GEN_Ahlone (STEAM TURBINE), GEN_Ahlone (Toyo Thai) (STEAM TURBINE)_recorder"
+            ]
+        },
+        "GEN_Minbu_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Minbu"
+        },
+        "GEN_Chauk_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Chauk"
+        },
+        "GEN_Taungdwingyi_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Taungdwingyi"
+        },
+        "GEN_Ta Nyaung_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Ta Nyaung"
+        },
+        "GEN_Buddhakone_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Buddhakone"
+        },
+        "GEN_Chaungku_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Chaungku"
+        },
+        "GEN_Kyungchaung_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Kyungchaung"
+        },
+        "GEN_Letpanhla_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Letpanhla"
+        },
+        "GEN_Myingyan_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Myingyan"
+        },
+        "GEN_Tharzi_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Tharzi"
+        },
+        "GEN_Thapyaywa_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Thapyaywa"
+        },
+        "GEN_Taungoo_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Taungoo"
+        },
+        "GEN_Tharyargone_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Tharyargone"
+        },
+        "GEN_Thephyu_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Thephyu"
+        },
+        "GEN_Kamarnat_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Kamarnat"
+        },
+        "GEN_Minhla_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Minhla"
+        },
+        "GEN_Oakshitpin_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Oakshitpin"
+        },
+        "GEN_Shwedaung_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Shwedaung"
+        },
+        "GEN_Aungchanthar_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Aungchanthar"
+        },
+        "GEN_Ngapyawdine_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Ngapyawdine"
+        },
+        "GEN_Nyaungpingyi_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Nyaungpingyi"
+        },
+        "GEN_Ohntaw_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Ohntaw"
+        },
+        "GEN_Wartaya_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Wartaya"
+        },
+        "GEN_Nay Pyi Taw (1)_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Nay Pyi Taw (1)"
+        },
+        "GEN_Nay Pyi Taw (2)_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Nay Pyi Taw (2)"
+        },
+        "GEN_Shwemyo_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Shwemyo"
+        },
+        "GEN_Pathein_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Pathein"
+        },
+        "GEN_Kyaiklat_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Kyaiklat"
+        },
+        "GEN_Athoke_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Athoke"
+        },
+        "GEN_Myanaung_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Myanaung"
+        },
+        "GEN_Wind-1_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Wind-1"
+        },
+        "GEN_Wind-2_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Wind-2"
+        },
+        "GEN_Wind-3_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Wind-3"
+        },
+        "GEN_Wind-4_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Wind-4"
+        },
+        "GEN_Wind-5_recorder": {
+            "type": "NumpyArrayNodeRecorder",
+            "node": "GEN_Wind-5"
+        },
+        "MYA_RES_gen": {
+            "type": "aggregatedrecorder",
+            "recorder_agg_func": "sum",
+            "recorders": [
+                "GEN_Minbu_recorder",
+                "GEN_Chauk_recorder",
+                "GEN_Taungdwingyi_recorder",
+                "GEN_Ta Nyaung_recorder",
+                "GEN_Buddhakone_recorder",
+                "GEN_Chaungku_recorder",
+                "GEN_Kyungchaung_recorder",
+                "GEN_Belin_recorder",
+                "GEN_Letpanhla_recorder",
+                "GEN_Myingyan_recorder",
+                "GEN_Tharzi_recorder",
+                "GEN_Thapyaywa_recorder",
+                "GEN_Taungoo_recorder",
+                "GEN_Tharyargone_recorder",
+                "GEN_Thephyu_recorder",
+                "GEN_Kamarnat_recorder",
+                "GEN_Minhla_recorder",
+                "GEN_Oakshitpin_recorder",
+                "GEN_Shwedaung_recorder",
+                "GEN_Aungchanthar_recorder",
+                "GEN_Ngapyawdine_recorder",
+                "GEN_Nyaungpingyi_recorder",
+                "GEN_Ohntaw_recorder",
+                "GEN_Wartaya_recorder",
+                "GEN_Nay Pyi Taw (1)_recorder",
+                "GEN_Nay Pyi Taw (2)_recorder",
+                "GEN_Shwemyo_recorder",
+                "GEN_Pathein_recorder",
+                "GEN_Kyaiklat_recorder",
+                "GEN_Athoke_recorder",
+                "GEN_Myanaung_recorder",
+                "GEN_Wind-1_recorder",
+                "GEN_Wind-2_recorder",
+                "GEN_Wind-3_recorder",
+                "GEN_Wind-4_recorder",
+                "GEN_Wind-5_recorder"
+            ]
+        }
+    }
+}
