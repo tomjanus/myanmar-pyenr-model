@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Bin input files
+*.h5
+*.hdf
+*.nc
+bin_data/
